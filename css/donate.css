@@ -1,0 +1,47 @@
+#logo {
+  padding: 1em 0 0 0;
+  }
+  .form-field-label {
+    padding-top:10px;
+    font-weight: bold;
+  }
+  .my-details-input {
+  width:100%;
+  padding:10px 0 10px 10px;
+  border:2px solid #5091cd;
+  height: 50px;
+  border-radius: ;
+  font-size: 1.8rem;
+}
+.donate-h2 {
+  text-transform: uppercase;
+  color: #004990;
+font-weight: bold;
+padding: 1em 0;
+}
+.i-want-give-heading {
+  font-weight:normal;
+  font-size: 1.5em;
+  margin: 1em;
+}
+.single_input {
+  margin-bottom:2% ;
+}
+.find-address {
+  height:50px;
+  font-size: 1.8rem;
+  padding:0 1em;
+}
+.gift-aid-claim {
+  background:#eee;
+  padding:2em 1em;
+  font-weight: bold;
+}
+.donate-checkbox {
+  width:;
+  height:;
+  margin:0;
+  position: relative;
+}
+
+.pointer {cursor: pointer;}

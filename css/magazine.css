@@ -1,0 +1,4 @@
+/* Magazine styles */	
+	.article-body > h1,.article-body > h2,.article-body > h3,.article-body > h4,.article-body > h5,.article-body > ul,.article-body > ol,.article-body > div,.article-body > figure,.article-body > p {
+		margin-top: 0px;
+	}
