@@ -38,7 +38,8 @@
 /* Donation amount */
 
 .donation_amount {
-  padding: 1.5em 0;
+  padding: 1.5em 0 0 0;
+  width:100%;
 }
 
 .donate-amount {
@@ -46,12 +47,14 @@
   text-align: center;
   margin: 0 auto;
   display: inline-block;
-  padding: 1em;
   text-align: center;
+  padding: 0;
+  width:100%;
 }
-
-.donation-amount-btn {
-  float: left;
+.donate-amount li {
+    display:inline-block;
+}
+.donation-amount-btn  {
   border: 2px solid #5091cd;
   padding: 1em 1.5em;
   margin: 0 0.5em;
@@ -60,14 +63,18 @@
   font-weight: bold;
   color: #5091cd;
   border-radius: 3px;
+text-transform: none;
+  background: #fff;
 }
 
-.donation-amount-btn.active {
+.donate-amount .active {
   background: #5091cd;
   border: 2px solid #5091cd;
   color: #fff;
 }
-
+.amount-hide-radio {
+  visibility:hidden;
+}
 .donation-amount-btn:hover {
   background: #5091cd;
   color: #fff;
@@ -81,15 +88,17 @@
   padding: 10px 0 10px 10px;
 
 }
-
-.my-details-input {
-  width: 100%;
-  padding: 10px 0 10px 10px;
-  border: 2px solid #5091cd;
-  height: 50px;
-  border-radius: ;
-  font-size: 1.8rem;
+.project_choice {
+  padding:1em 0 0 0;
 }
+.i-want-give-heading {
+  font-weight: normal;
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+
+
 /* Donation pay button */
 
 .donate-buttons {
@@ -130,13 +139,6 @@
   font-weight: bold;
   padding: 1em 0;
 }
-
-.i-want-give-heading {
-  font-weight: normal;
-  font-size: 1.5em;
-  margin: 1em;
-}
-
 .single_input {
   margin-bottom: 2%;
 }
