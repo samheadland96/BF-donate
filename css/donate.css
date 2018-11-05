@@ -1,3 +1,5 @@
+
+
 /* MAIN DONATE BOX */
 
 .donatebox {
@@ -47,15 +49,10 @@
   margin: 0 auto;
   display: inline-block;
   text-align: center;
-  padding: 0;
+  padding: 1em 0;
   width: 100%;
 }
-
-.donate-amount li {
-  display: inline-block;
-}
-
-.donation-amount-btn {
+.donation_amount {
   border: 2px solid #5091cd;
   padding: 1em 1.5em;
   margin: 0 0.5em;
@@ -68,7 +65,7 @@
   background: #fff;
 }
 
-.donate-amount .active {
+.donation_amount.active {
   background: #5091cd;
   border: 2px solid #5091cd;
   color: #fff;
@@ -138,7 +135,14 @@
   border-radius: ;
   font-size: 1.8rem;
 }
-
+form input[type=text],form  select{
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  border: 2px solid #5091cd;
+  height: 50px;
+  border-radius: ;
+  font-size:;
+}
 .donate-h2 {
   text-transform: uppercase;
   color: #004990;
@@ -182,7 +186,9 @@
 .card {
   border: none;
 }
-
+.tooltip  {
+  font-size: 0.7em;
+}
 .card-header {
   background: none;
   border: none;
