@@ -24,31 +24,33 @@
 
   <section>
     <picture>
-  <source media="(min-width: 650px)" srcset="img/donate-header_main.png">
-  <source media="(min-width: 465px)" srcset="img/donate-header_main.png">
-  <img src="img/donate-header_mobile.png" alt="" style="width:100%;">
-</picture>
+      <source media="(min-width: 650px)" srcset="img/donate-header_main.png">
+      <source media="(min-width: 465px)" srcset="img/donate-header_main.png">
+      <img src="img/donate-header_mobile.png" alt="" style="width:100%;">
+    </picture>
   </section>
 
   <section>
 
     </div>
     <div class="col-sm-12 col-md-12 col-lg-5  mx-auto">
+
       <div class="donatebox" style="background:#fff;margin-top:;border:0.1px solid grey;">
-        <h1 style="color:#000;font-weight: bold;text-transform: uppercase;text-align:center;padding:0 0 1em 0;font-size:35px;">
-          Donate to Barnabas Fund
+        <form action="donate-details-page.html" method="post" id="barnabas-donate-form" accept-charset="UTF-8">
+          <h1 style="color:#000;font-weight: bold;text-transform: uppercase;text-align:center;padding:0 0 1em 0;font-size:35px;">
+          Donate today
         </h1>
 
-        <div class="btn-group btn-group-toggle  " data-toggle="buttons">
-          <label class="btn donation_type">
+          <div class="btn-group btn-group-toggle  " data-toggle="buttons">
+            <label class="btn donation_type">
     <input type="radio" name="regular" id="regular" autocomplete="off" > Regular
   </label>
-          <label class="btn donation_type active">
+            <label class="btn donation_type active">
     <input type="radio" name="single" id="single" autocomplete="off"> Single
   </label>
-        </div>
+          </div>
 
-        <div class="donation_amount">
+          <div class="donation_amount">
             <ul class="donate-amount">
               <li class="">
                 <a href="#">
@@ -56,28 +58,28 @@
                     £10
                   </button>
                 </a>
-            </li>
-            <li class="">
-              <a href="#">
+              </li>
+              <li class="">
+                <a href="#">
                 <button class="donation-amount-btn" data-dollars='25' data-impact="Covers housing or counseling services for one person">
                   £50
                 </button>
               </a>
-          </li>
-          <li class="">
-            <a href="#">
+              </li>
+              <li class="">
+                <a href="#">
               <button class="donation-amount-btn" data-dollars='25' data-impact="Covers housing or counseling services for one person">
                 £100
               </button>
             </a>
-        </li>
-        <li class="">
-          <a href="#">
+              </li>
+              <li class="">
+                <a href="#">
             <button class="donation-amount-btn" data-dollars='25' data-impact="Covers housing or counseling services for one person">
               Other
             </button>
           </a>
-        </li>
+              </li>
             </ul>
           </div>
 
@@ -88,20 +90,21 @@
 
 
 
-        <div class="project_choice">
-          <strong><p>I want to give to:</p></strong>
-          <select class="project-choice" name="">
+          <div class="project_choice">
+            <strong><p>I want to give to:</p></strong>
+            <select class="project-choice" name="">
    <option value="United Kingdom">00-000: General Fund</option>
    <option value="New Zealand">00-000: General Fund</option>
    <option value="Australia">00-000: General Fund</option>
    <option value="United States">00-000: General Fund</option>
    </select>
-        </div>
+          </div>
 
-        <div class="donate-buttons">
-          <a href="donate-details-page.html"><button
+          <div class="donate-buttons">
+            <a href="donate-details-page.html"><button
       class=" pay-by-buttons">Donate now</button></a>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
   </section>
