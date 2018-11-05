@@ -14,6 +14,12 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script>
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
 </head>
 
 <body>
@@ -25,6 +31,11 @@
     <h1 class="i-want-give-heading" style="text-align:center;">I want to give <strong style="font-size:1.5em;">£10.00</strong> to the<br/><span style="font-size:;color:#5091cd;"><strong>00-634 Disaster Relief Fund</strong></span></h1>
   </div>
   <div class="col-sm-12 col-md-12 col-lg-4 mx-auto" style="">
+
+    <div class="my-5">
+      <div class="d-flex align-items-start flex-column" style="height: ;"><a style="font-weight:" href="donate-page.html"><i class="fas fa-caret-left"></i> Back</a>
+      </div>
+    </div>
     <h2 class="donate-h2">My details</h2>
     <div class="form-row">
       <div class="col-md-2 mb-3">
@@ -117,12 +128,12 @@
         <p>Barnabas Fund will use the information you provide on this form to be in touch with you and to provide updates and marketing. Please let us know all the ways you would like to hear from us:</p>
         <div class="gift-aid-claim">
           <label class="checkbox-container">
-  <input type="checkbox" >Send me the latest Barnabas email updates
+  <input type="checkbox" >By email
   <span class="checkmark"></span>
 </label>
           </br>
           <label class="checkbox-container">
-<input type="checkbox" >Send me the latest Barnabas updates by post
+<input type="checkbox" >By post
 <span class="checkmark"></span>
 </label>
         </div>
@@ -135,12 +146,17 @@
         <h2 class="donate-h2">Gift Aid</h2>
         <p><strong>Would you like to Gift Aid your donation?</strong><i style="float:right;" class="fas fa-info-circle"></i> </p>
         <p>Turn your donation into <span style="font-size:1.5em;font-weight:bold;color:#5091cd;">£12.50</span></p>
-        <div class="gift-aid-claim">
+        <div class="gift-aid-claim" data-toggle="collapse" data-target="#giftaid-text" aria-expanded="false" aria-controls="giftaid-text">
           <label class="checkbox-container">
 <input type="checkbox" >Yes, I would like Barnabas Fund to claim Gift Aid
+
 <span class="checkmark"></span>
 </label>
 
+        </div>
+        <div class="collapse" id="giftaid-text">
+          <p><small>I want to Gift Aid this donation and any donations I make in the future or have made in the past to Barnabas Fund. I am a UK taxpayer and understand that if I pay less Income Tax and/or Capital Gains Tax than the amount of Gift Aid claimed on all my donations in that tax year it is my responsibility to pay any difference.
+</small></p>
         </div>
       </div>
 
@@ -175,8 +191,6 @@
     </div>
 
   </div>
-  <!-- White space -->
-  <!-- Footer -->
   <!-- Search bar -->
   <script src="js/searchbar.js"></script>
 </body>
