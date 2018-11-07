@@ -87,13 +87,23 @@
 .other-amount {
   border: 2px solid #5091cd;
   height: 50px;
+  width:100px;
   padding: 10px 0 10px 10px;
 }
 
 .project_choice {
   padding: 1em 0 0 0;
+  margin:0 7em;
 }
-
+.project-choice {
+  width: 100%;
+  margin:0 ;
+  padding: 10px 0 10px 10px;
+  border: 2px solid #5091cd;
+  height: 50px;
+  border-radius: ;
+  font-size: 1.8rem;
+}
 .i-want-give-heading {
   font-weight: normal;
   font-size: 1.5em;
@@ -193,14 +203,7 @@ color:#000;
   background: none;
   border: none;
 }
-.project-choice {
-  width: 50%;
-  padding: 10px 0 10px 10px;
-  border: 2px solid #5091cd;
-  height: 50px;
-  border-radius: ;
-  font-size: 1.8rem;
-}
+
 .checkbox-container {
     display: block;
     position: relative;
