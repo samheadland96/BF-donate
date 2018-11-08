@@ -262,6 +262,7 @@
 
  .container-lg .example .success .icon svg {
   will-change: transform;
+  
 }
 
  .container-lg .example .success .icon .border {
