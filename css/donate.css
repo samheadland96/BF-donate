@@ -127,7 +127,19 @@
 .btn-clicked {
   background: #5091cd;
 }
-
+.bf-donate {
+    font-size: 18px;
+    width: ;
+    background: #d61215;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-weight: bold;
+    border-radius: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+	}
 #logo {
   padding: 1em 0 0 0;
 }
