@@ -14,21 +14,17 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
   <link rel="stylesheet" type="text/css" href="css/example4.css" data-rel-css="" />
-
 </head>
 
 <body>
   <!-- Header Start -->
   <header>
     <div class="d-flex align-items-center justify-content-between" id="">
-
       <div id="" style="text-align:center;padding:1em ;"><img src="img/barnabas-blue-logo_GB.png"></div>
       <p style="padding-right:1em;color:#2e3131"><strong>Secure Donation</strong> <i class="fas fa-lock"></i></p>
     </div>
   </header>
-
   <section>
     <picture>
       <source media="(min-width: 650px)" srcset="img/donate-header_main.png">
@@ -36,102 +32,88 @@
       <img src="img/donate-header_mobile.png" alt="" style="width:100%;">
     </picture>
   </section>
-
   <section>
-
     </div>
     <div class="col-sm-12 col-md-12 col-lg-6  mx-auto">
-
       <div class="donatebox" style="background:#fff;margin-top:;">
+        <div class="col-sm-7 mx-auto">
         <!--  <form /action="donate-details-page.html" method="post" id="barnabas-donate-form" accept-charset="UTF-8">-->
         <h1 style="color:#000;font-weight: bold;text-transform: uppercase;text-align:center;padding:0 0 1em 0;font-size:35px;">
-          Donate today
-        </h1>
-
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-          <label class="btn donation_type active">
-    <input type="radio" name="regular" id="regular" autocomplete="off" > Regular
-  </label>
-          <label class="btn donation_type">
-    <input type="radio" name="single" id="single" autocomplete="off"> Single
-  </label>
-        </div>
-
-        <div class="donate-amount">
-
-          <div class="btn-group btn-group-toggle  " data-toggle="buttons">
-            <label class="btn donation_amount">
-                  <input type="radio" name="regular" id="regular" autocomplete="off" > £10
-            </label>
-            <label class="btn donation_amount active">
-      <input type="radio" name="single" id="single" autocomplete="off"> £50
-    </label>
-            <label class="btn donation_amount">
-<input type="radio" name="regular" id="100" autocomplete="off" > £100
-</label>
-            <label class="btn donation_amount">
-<input type="radio" name="regular" id="regular" autocomplete="off" ><a data-toggle="collapse" data-target="#otherAmount" aria-expanded="true" aria-controls="otherAmount"> Other</a>
-</label>
+                  Donate today
+               </h1>
+        <div class="donation-type_wrapper">
+          <div class="btn-group btn-group-toggle " data-toggle="buttons">
+            <label class="btn donation_type active">
+                     <input type="radio" name="regular" id="regular" autocomplete="off" > Regular
+                     </label>
+            <label class="btn donation_type">
+                     <input type="radio" name="single" id="single" autocomplete="off"> Single
+                     </label>
           </div>
-
         </div>
-
+        <div class="donation-amount_wrapper">
+          <div class="btn-group btn-group-toggle full-width " data-toggle="buttons">
+            <label class="btn donation_amount">
+                     <input type="radio" name="regular" id="regular" autocomplete="off" > £10
+                     </label>
+            <label class="btn donation_amount active">
+                     <input type="radio" name="single" id="single" autocomplete="off"> £50
+                     </label>
+            <label class="btn donation_amount">
+                     <input type="radio" name="regular" id="100" autocomplete="off" > £100
+                     </label>
+            <label class="btn donation_amount">
+                     <input type="radio" name="regular" id="regular" autocomplete="off" ><a data-toggle="collapse" data-target="#otherAmount" aria-expanded="true" aria-controls="otherAmount"> Other</a>
+                     </label>
+          </div>
+        </div>
         <div class="collapse" id="otherAmount">
           <span style="font-weight:bold;font-size:15px;">Please enter an amount:  £</span>
           <input type="text" class="other-amount" name="regular" id="regular" autocomplete="off">
         </div>
-
-
-
-        <div class="project_choice">
-          <strong><p>I want to give to:</p></strong>
+        <div class="donation-projectchoice_wrapper">
+          <strong>
+                     <p>I want to give to:</p>
+                  </strong>
           <select class="project-choice" name="">
-   <option value="United Kingdom">00-000: General Fund</option>
-   <option value="New Zealand">00-345: Victims of Violence Fund</option>
-   <option value="Australia">00-1313: Project Joseph to feed hungry Christians in Africa Fund</option>
-   <option value=""  data-target="#otherProject" aria-expanded="true" aria-controls="otherProject">Other</option>
-   </select>
+                     <option value="United Kingdom">00-000: General Fund</option>
+                     <option value="New Zealand">00-345: Victims of Violence Fund</option>
+                     <option value="Australia">00-1313: Project Joseph to feed hungry Christians in Africa Fund</option>
+                     <option value=""  data-target="#otherProject" aria-expanded="true" aria-controls="otherProject">Other</option>
+                  </select>
         </div>
-
         <div id="otherProject" class="collapse" aria-labelledby="headingOne" data-parent="#otherProject">
           <div class="project_choice">
             <select class="project-choice" name="">
-        <option value="United Kingdom">00-000: General Fund</option>
-        <option value="New Zealand">00-345: Victims of Violence Fund</option>
-        <option value="Australia">00-1313: Project Joseph to feed hungry Christians in Africa Fund</option>
-        <option value="United States"  data-target="#otherAmount" aria-expanded="true" aria-controls="otherAmount">Other</option>
-        </select>
+                        <option value="United Kingdom">00-000: General Fund</option>
+                        <option value="New Zealand">00-345: Victims of Violence Fund</option>
+                        <option value="Australia">00-1313: Project Joseph to feed hungry Christians in Africa Fund</option>
+                        <option value="United States"  data-target="#otherAmount" aria-expanded="true" aria-controls="otherAmount">Other</option>
+                     </select>
           </div>
         </div>
         <div class="donate-buttons">
           <a href="donate-details-page.html"><button
-      class="bf-donate">Donate now</button></a>
+                     class="bf-donate">Donate now</button></a>
         </div>
         <!--   </form>-->
       </div>
     </div>
+    </div>
   </section>
-
-
   <!-- OTHER WAYS TO GIVE SECTION-->
   <section>
     <div class="col-sm-6 mx-auto">
       <h2 class="donate-h2" style="text-align:center;">Other ways to give</h2>
-
       <div class="accordion" id="accordionExample">
         <div class="card">
           <a style="" class="other-ways-heading" type="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             <div class="card-header d-flex align-items-center justify-content-between" id="headingOne">
-
               <div class="d-flex align-items-center justify-content-start">
-                <i  style="width:1em;"class="fas fa-credit-card  fa-2x"></i>
+                <i style="width:1em;" class="fas fa-credit-card  fa-2x"></i>
                 <span style="font-weight:bold; padding-left:1em;"> Bank transfer</span>
-
               </div>
-
               <i class="fas fa-plus  fa-1x"></i>
-
-
             </div>
           </a>
           <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -139,78 +121,54 @@
               <p> For one-off payments, our bank details are:</p>
               <p> Account number: 50133299 </p>
               </p> Sort code: 20-26-53. </p>
-
               <p> For your payment reference please use EITHER your unique supporter number if known, OR your UK postcode and house number (or ANON to remain anonymous) followed by the project number you wish to support. For example: 123456/000 or SE11SE/2/000.
-                If you prefer NOT to receive an acknowledgment letter for your payment, please add /DNA at the end of your reference or email: finance@barnabasfund.org.</p>
+                If you prefer NOT to receive an acknowledgment letter for your payment, please add /DNA at the end of your reference or email: finance@barnabasfund.org.
+              </p>
             </div>
           </div>
         </div>
-
         <div class="card">
           <a style="" class="other-ways-heading" type="" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
             <div class="card-header d-flex align-items-center justify-content-between" id="headingTwo">
-
               <div class="d-flex align-items-center justify-content-start">
-                <i  style="width:1em;"class="fas fa-phone  fa-2x"></i>
+                <i style="width:1em;" class="fas fa-phone  fa-2x"></i>
                 <span style="font-weight:bold; padding-left:1em;"> Telephone</span>
-
               </div>
-
               <i class="fas fa-plus  fa-1x"></i>
-
-
             </div>
           </a>
-
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
             <div class="card-body">
               If you prefer to telephone you can call direct to donate by dialling: <strong>0800 587 4006</strong> (UK) or <strong>+44 24 7623 1923</strong> (Outside UK)
-
-
             </div>
           </div>
         </div>
-
         <div class="card">
-
           <a style="" class="other-ways-heading" type="" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
             <div class="card-header d-flex align-items-center justify-content-between" id="headingThree">
-
               <div class="d-flex align-items-center justify-content-start">
-                <i style="width:1em;"class="fas fa-mobile  fa-2x"></i>
+                <i style="width:1em;" class="fas fa-mobile  fa-2x"></i>
                 <span style="font-weight:bold; padding-left:1em;"> SMS</span>
-
               </div>
-
               <i class="fas fa-plus  fa-1x"></i>
-
-
             </div>
           </a>
-
-
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
               <p> For a quick donation of £5.00 by SMS (see terms and conditions here) text <strong>AID</strong> to <strong>70660</strong> (Please note: This facility is presently only available to UK supporters). Text costs £5.00 plus network charge. Barnabas
                 Fund receives 100% of your donation. Obtain bill payer’s permission. Customer care 024 7623 1923. Charity No 1092935.
               </p>
-
             </div>
           </div>
         </div>
-
         <div class="card">
           <a style="" class="other-ways-heading" type="" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
             <div class="card-header d-flex align-items-center justify-content-between" id="headingOne">
-
               <div class="d-flex align-items-center justify-content-start">
-                <i  style="width:1em;"class="fas fa-envelope  fa-2x"></i>
+                <i style="width:1em;" class="fas fa-envelope  fa-2x"></i>
                 <span style="font-weight:bold; padding-left:1em;">Donate by post</span>
               </div>
-
               <i class="fas fa-plus  fa-1x"></i>
-
-
             </div>
           </a>
           <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
@@ -222,8 +180,6 @@
         </div>
       </div>
   </section>
-
-
   <div class="mt-5" style="background:#eee;">
     <div class="col-sm-4 mx-auto">
       <div class="d-flex justify-content-between align-items-center">
@@ -231,11 +187,8 @@
         <p><strong>Secure Donation</strong> <i class="fas fa-lock"></i></p>
       </div>
       <p style="text-align:center;font-size:0.7em;margin:0;">Registered UK charity number: 1092935 Company registered in England. Number: 4029536</p>
-
     </div>
-
   </div>
-
 </body>
 
 </html>

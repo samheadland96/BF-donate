@@ -43,7 +43,7 @@
   width: 100%;
 }
 
-.donate-amount {
+.donation-amount_wrapper {
   list-style-type: none;
   text-align: center;
   margin: 0 auto;
@@ -92,9 +92,8 @@
   padding: 10px 0 10px 10px;
 }
 
-.project_choice {
-  padding: 1em 0 0 0;
-  margin: 0 7em;
+.donation-projectchoice_wrapper {
+  padding:0;
 }
 
 .project-choice {
@@ -243,7 +242,9 @@ form input[type=text], form select {
   -ms-user-select: none;
   user-select: none;
 }
-
+.full-width {
+  width: 100%;
+}
 
 /* Hide the browser's default checkbox */
 
