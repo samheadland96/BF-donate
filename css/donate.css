@@ -218,9 +218,6 @@ form input[type=text], form select {
   background-color:none;
   cursor: pointer;
 }
-.card-header {
-
-}
 .card {
   border: none;
 }
