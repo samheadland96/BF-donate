@@ -214,10 +214,13 @@ form input[type=text], form select {
 
 .other-ways-heading {
   color: #fff;
-  padding: 1em;
-  background: #5091cd;
+  padding: ;
+  background-color:none;
+  cursor: pointer;
 }
+.card-header {
 
+}
 .card {
   border: none;
 }
@@ -227,7 +230,9 @@ form input[type=text], form select {
 }
 
 .card-header {
-  background: none;
+  background: #004990;
+  color: #fff;
+  margin-bottom: 0.5em;
   border: none;
 }
 
