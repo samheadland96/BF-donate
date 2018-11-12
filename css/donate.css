@@ -1,3 +1,23 @@
+button {
+  background: #5091CD;
+  border: 0px;
+  color: #ffffff;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  line-height: 2.2rem;
+  border-radius: 5px;
+  transition: 0.2s background;
+}
+button:hover {
+  background: #004990;
+  cursor:pointer;
+}
+
+button:active {
+  background: #fff;
+  color: #004990;
+}
+
 /* MAIN DONATE BOX */
 
 .donatebox {
@@ -71,7 +91,7 @@
   border: 2px solid #5091cd;
   padding: 1em;
   margin: ;
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: center;
   font-weight: bold;
   color: #5091cd;
@@ -118,11 +138,13 @@
   border: 2px solid #5091cd;
   height: 50px;
   border-radius: ;
-  font-size: 1.8rem;
+  font-size: 1em;
+  font-weight:;
 }
 
 .i-want-give-heading {
   font-weight: normal;
+  color:#004990;
   font-size: 1.5em;
   margin: 1em;
 }
@@ -154,6 +176,9 @@
   font-weight: bold;
   border-radius: 0;
   font-family: 'Roboto Condensed', sans-serif;
+  border: 0px;
+  color: #ffffff;
+  transition: 0.2s background;
 }
 
 #logo {
@@ -166,6 +191,7 @@
 .form-field-label {
   padding-top: 10px;
   font-weight: bold;
+  font-size: 1.2em;
 }
 
 .my-details-input {
@@ -174,7 +200,7 @@
   border: 2px solid #5091cd;
   height: 50px;
   font-weight: normal;
-  font-size: 1.8rem;
+  font-size: 1em;
   color: #000;
 }
 
@@ -208,7 +234,7 @@ form input[type=text], form select {
 
 .find-address {
   height: 50px;
-  font-size: 1.8rem;
+  font-size:1.3em;
   padding: 0 1em;
 }
 
