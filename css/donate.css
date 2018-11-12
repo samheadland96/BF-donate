@@ -12,6 +12,15 @@
   margin-top: -5em;
 }
 
+.donatebox h1 {
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 0 1em 0;
+  font-size: 35px;
+}
+
 .donatebox h2 {
   padding: 0;
   margin: 0;
@@ -29,13 +38,14 @@
   text-align: center;
   width: 100%;
 }
+
 .donation_type {
   background: #fff;
   font-size: 1em;
   font-weight: bold;
   border: 2px solid #5091cd;
   width: 100%;
-  padding:0.5em;
+  padding: 0.5em;
 }
 
 .donation_type.active {
@@ -46,7 +56,6 @@
 
 
 /* Donation amount */
-
 
 .donation-amount_wrapper {
   list-style-type: none;
@@ -70,7 +79,6 @@
   text-transform: none;
   background: #fff;
   width: 100%;
-
 }
 
 .donation_amount.active {
@@ -100,7 +108,7 @@
 }
 
 .donation-projectchoice_wrapper {
-  padding:0;
+  padding: 0;
 }
 
 .project-choice {
@@ -133,19 +141,21 @@
 .btn-clicked {
   background: #5091cd;
 }
+
 .bf-donate {
-    font-size: 18px;
-    width: ;
-    background: #d61215;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 30px;
-    font-weight: bold;
-    border-radius: 0;
-    font-family: 'Roboto Condensed', sans-serif;
-	}
+  font-size: 18px;
+  width: ;
+  background: #d61215;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-weight: bold;
+  border-radius: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 #logo {
   padding: 1em 0 0 0;
 }
@@ -221,9 +231,10 @@ form input[type=text], form select {
 .other-ways-heading {
   color: #fff;
   padding: ;
-  background-color:none;
+  background-color: none;
   cursor: pointer;
 }
+
 .card {
   border: none;
 }
@@ -249,9 +260,11 @@ form input[type=text], form select {
   -ms-user-select: none;
   user-select: none;
 }
+
 .full-width {
   width: 100%;
 }
+
 
 /* Hide the browser's default checkbox */
 
@@ -321,11 +334,9 @@ form input[type=text], form select {
   transform: rotate(45deg);
 }
 
-
-
 .example.example4 {
-  background-color:;
-  width:100%;
+  background-color: ;
+  width: 100%;
 }
 
 .example.example4 * {
@@ -339,7 +350,7 @@ form input[type=text], form select {
   padding: 0 15px;
 }
 
-.example.example4 form > * + * {
+.example.example4 form>*+* {
   margin-top: 20px;
 }
 
@@ -371,11 +382,12 @@ form input[type=text], form select {
 .example.example4 .card-only {
   display: block;
 }
+
 .example.example4 .payment-request-available {
   display: none;
 }
 
-.example.example4 fieldset legend + * {
+.example.example4 fieldset legend+* {
   clear: both;
 }
 
@@ -459,14 +471,17 @@ form input[type=text], form select {
 .example.example4 .success .reset path {
   fill: #d782d9;
 }
+
 .btn-group {
   width: 100%;
 }
 
+
 /* Small devices (landscape phones, 576px and up) */
+
 @media (max-width: 600px) {
   .donatebox {
-border: 1px solid #eee;
-    margin-top:1em;
+    border: 1px solid #eee;
+    margin-top: 1em;
   }
 }
