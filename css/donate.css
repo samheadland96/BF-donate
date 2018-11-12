@@ -462,3 +462,11 @@ form input[type=text], form select {
 .btn-group {
   width: 100%;
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 600px) {
+  .donatebox {
+border: 1px solid #eee;
+    margin-top:1em;
+  }
+}
