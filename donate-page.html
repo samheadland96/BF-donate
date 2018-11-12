@@ -36,7 +36,7 @@
     </div>
     <div class="col-sm-12 col-md-12 col-lg-6  mx-auto">
       <div class="donatebox" style="background:#fff;margin-top:;">
-        <div class="col-sm-7 mx-auto">
+        <div class="col-sm-12 col-md-7 col-lg-7 mx-auto">
         <!--  <form /action="donate-details-page.html" method="post" id="barnabas-donate-form" accept-charset="UTF-8">-->
         <h1 style="color:#000;font-weight: bold;text-transform: uppercase;text-align:center;padding:0 0 1em 0;font-size:35px;">
                   Donate today
@@ -44,26 +44,26 @@
         <div class="donation-type_wrapper">
           <div class="btn-group btn-group-toggle " data-toggle="buttons">
             <label class="btn donation_type active">
-                     <input type="radio" name="regular" id="regular" autocomplete="off" > Regular
+                     <input type="radio" value="regular" name="regular" id="regular" autocomplete="off" > Regular
                      </label>
             <label class="btn donation_type">
-                     <input type="radio" name="single" id="single" autocomplete="off"> Single
+                     <input type="radio" value="regular" name="single" id="single" autocomplete="off"> Single
                      </label>
           </div>
         </div>
         <div class="donation-amount_wrapper">
           <div class="btn-group btn-group-toggle full-width " data-toggle="buttons">
-            <label class="btn donation_amount">
-                     <input type="radio" name="regular" id="regular" autocomplete="off" > £10
-                     </label>
             <label class="btn donation_amount active">
-                     <input type="radio" name="single" id="single" autocomplete="off"> £50
+                     <input type="radio" name="amount1" id="amount1" autocomplete="off" > £10
                      </label>
             <label class="btn donation_amount">
-                     <input type="radio" name="regular" id="100" autocomplete="off" > £100
+                     <input type="radio" name="amount2" id="amount2" autocomplete="off"> £50
                      </label>
             <label class="btn donation_amount">
-                     <input type="radio" name="regular" id="regular" autocomplete="off" ><a data-toggle="collapse" data-target="#otherAmount" aria-expanded="true" aria-controls="otherAmount"> Other</a>
+                     <input type="radio" name="amount3" id="amount3" autocomplete="off" > £100
+                     </label>
+            <label class="btn donation_amount">
+                     <input type="radio" name="otheramount" id="otheramount" autocomplete="off" ><a data-toggle="collapse" data-target="#otherAmount" aria-expanded="true" aria-controls="otherAmount"> Other</a>
                      </label>
           </div>
         </div>
@@ -75,19 +75,19 @@
           <strong>
                      <p>I want to give to:</p>
                   </strong>
-          <select class="project-choice" name="">
-                     <option value="United Kingdom">00-000: General Fund</option>
-                     <option value="New Zealand">00-345: Victims of Violence Fund</option>
-                     <option value="Australia">00-1313: Project Joseph to feed hungry Christians in Africa Fund</option>
+          <select onclick="" class="project-choice" name="project">
+                     <option value="00-000">00-000: General Fund</option>
+                     <option value="00-345">00-345: Victims of Violence Fund</option>
+                     <option value="00-1313">00-1313: Project Joseph to feed hungry Christians in Africa Fund</option>
                      <option value=""  data-target="#otherProject" aria-expanded="true" aria-controls="otherProject">Other</option>
                   </select>
         </div>
         <div id="otherProject" class="collapse" aria-labelledby="headingOne" data-parent="#otherProject">
           <div class="project_choice">
             <select class="project-choice" name="">
-                        <option value="United Kingdom">00-000: General Fund</option>
-                        <option value="New Zealand">00-345: Victims of Violence Fund</option>
-                        <option value="Australia">00-1313: Project Joseph to feed hungry Christians in Africa Fund</option>
+                        <option value="00-000">00-000: General Fund</option>
+                        <option value="00-345">00-345: Victims of Violence Fund</option>
+                        <option value="00-1313">00-1313: Project Joseph to feed hungry Christians in Africa Fund</option>
                         <option value="United States"  data-target="#otherAmount" aria-expanded="true" aria-controls="otherAmount">Other</option>
                      </select>
           </div>
@@ -182,11 +182,10 @@
   </section>
   <div class="mt-5" style="background:#eee;">
     <div class="col-sm-4 mx-auto">
-      <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex justify-content-center align-items-center">
         <img style="" src="https://barnabasfund.org/sites/default/files/images/assets/fundraising-regulator-logo.png" />
-        <p><strong>Secure Donation</strong> <i class="fas fa-lock"></i></p>
       </div>
-      <p style="text-align:center;font-size:0.7em;margin:0;">Registered UK charity number: 1092935 Company registered in England. Number: 4029536</p>
+      <p style="text-align:center;font-size:0.7em;margin:0;padding:1em 0;">Registered UK charity number: 1092935 Company registered in England. Number: 4029536</br> <a href="">Terms and Conditions</a> | <a href="">Privacy Policy</a></p>
     </div>
   </div>
 </body>
