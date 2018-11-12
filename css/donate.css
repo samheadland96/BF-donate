@@ -21,12 +21,21 @@
 
 /* Donation type (single or regular) */
 
+.donation-type_wrapper {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
 .donation_type {
   background: #fff;
-  padding: 0.5em 3em;
   font-size: 1em;
   font-weight: bold;
   border: 2px solid #5091cd;
+  width: 100%;
+  padding:0.5em;
 }
 
 .donation_type.active {
@@ -38,10 +47,6 @@
 
 /* Donation amount */
 
-.donation_amount {
-  padding: 1.5em 0 0 0;
-  width: 100%;
-}
 
 .donation-amount_wrapper {
   list-style-type: none;
@@ -64,6 +69,8 @@
   border-radius: 3px;
   text-transform: none;
   background: #fff;
+  width: 100%;
+
 }
 
 .donation_amount.active {
@@ -451,4 +458,7 @@ form input[type=text], form select {
 
 .example.example4 .success .reset path {
   fill: #d782d9;
+}
+.btn-group {
+  width: 100%;
 }
