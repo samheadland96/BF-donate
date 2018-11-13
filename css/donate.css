@@ -204,14 +204,6 @@ button:active {
   color: #000;
 }
 
-form input[type=text], form select {
-  width: 100%;
-  padding: 10px 0 10px 10px;
-  border: 2px solid #5091cd;
-  height: 50px;
-  color: #000;
-}
-
 .donate-h2 {
   text-transform: uppercase;
   color: #004990;
@@ -359,143 +351,149 @@ form input[type=text], form select {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
-.example.example4 {
-  background-color: ;
-  width: 100%;
+.example.example3 {
+  background-color: #004990;
+  border-radius:0;
+  padding:4em;
 }
 
-.example.example4 * {
-  font-family: Inter UI, Open Sans, Segoe UI, sans-serif;
+.example.example3 * {
+  font-family: Roboto, sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-.example.example4 form {
-  max-width: 496px !important;
-  padding: 0 15px;
-}
-
-.example.example4 form>*+* {
-  margin-top: 20px;
-}
-
-.example.example4 .container {
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-  border-radius: 4px;
-  padding: 3px;
-}
-
-.example.example4 fieldset {
+.example.example3 .fieldset {
+  margin: 0 15px 30px;
+  padding: 0;
   border-style: none;
-  padding: 5px;
-  margin-left: -5px;
-  margin-right: -5px;
-  background: rgba(18, 91, 152, 0.05);
-  border-radius: 8px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.example.example4 fieldset legend {
-  float: left;
+.example.example3 .field {
+  padding: 10px 20px 11px;
+  background-color:#FFF ;
+  border-radius:0;
   width: 100%;
-  text-align: center;
-  font-size: 13px;
-  color: #8898aa;
-  padding: 3px 10px 7px;
 }
 
-.example.example4 .card-only {
-  display: block;
+.example.example3 .field.half-width {
+  width: calc(50% - (5px / 2));
 }
 
-.example.example4 .payment-request-available {
-  display: none;
+.example.example3 .field.third-width {
+  width: calc(33% - (5px / 3));
 }
 
-.example.example4 fieldset legend+* {
-  clear: both;
+.example.example3 .field + .field {
+  margin-top: 6px;
 }
 
-.example.example4 input, .example.example4 button {
+.example.example3 .field.focus,
+.example.example3 .field:focus {
+  color: #424770;
+  background-color: #;
+}
+
+.example.example3 .field.invalid {
+  background-color: #fa755a;
+}
+
+.example.example3 .field.invalid.focus {
+  background-color: #f6f9fc;
+}
+
+.example.example3 .field.focus::-webkit-input-placeholder,
+.example.example3 .field:focus::-webkit-input-placeholder {
+  color: #CFD7DF;
+}
+
+.example.example3 .field.focus::-moz-placeholder,
+.example.example3 .field:focus::-moz-placeholder {
+  color: #CFD7DF;
+}
+
+.example.example3 .field.focus:-ms-input-placeholder,
+.example.example3 .field:focus:-ms-input-placeholder {
+  color: #CFD7DF;
+}
+
+.example.example3 input, .example.example3 button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   outline: none;
   border-style: none;
-  color: #fff;
 }
 
-.example.example4 input:-webkit-autofill {
-  transition: background-color 100000000s;
-  -webkit-animation: 1ms void-animation-out;
+.example.example3 input {
+  color: #5091cd;
 }
 
-.example.example4 #example4-card {
-  padding: 10px;
-  margin-bottom: 2px;
+.example.example3 input::-webkit-input-placeholder {
+  color: #9BACC8;
 }
 
-.example.example4 input {
-  -webkit-animation: 1ms void-animation-out;
-}
-
-.example.example4 input::-webkit-input-placeholder {
+.example.example3 input::-moz-placeholder {
   color: #9bacc8;
 }
 
-.example.example4 input::-moz-placeholder {
+.example.example3 input:-ms-input-placeholder {
   color: #9bacc8;
 }
 
-.example.example4 input:-ms-input-placeholder {
-  color: #9bacc8;
-}
-
-.example.example4 button {
+.example.example3 button {
   display: block;
-  width: 100%;
-  height: 37px;
-  background-color: #004990;
-  border-radius: 2px;
+  width: calc(100% - 30px);
+  height: 40px;
+  margin: 0 15px;
+  background-color: #5091cd;
+  border-radius: 0;
   color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
-.example.example4 button:active {
-  background-color: #b76ac4;
+.example.example3 button:active {
+  background-color: #f5be58;
 }
 
-.example.example4 .error svg .base {
-  fill: #e25950;
+.example.example3 .error svg .base {
+  fill: #fa755a;
 }
 
-.example.example4 .error svg .glyph {
-  fill: #f6f9fc;
+.example.example3 .error svg .glyph {
+  fill: #fff;
 }
 
-.example.example4 .error .message {
-  color: #e25950;
+.example.example3 .error .message {
+  color: #fff;
 }
 
-.example.example4 .success .icon .border {
-  stroke: #ffc7ee;
+.example.example3 .success .icon .border {
+  stroke: #fcd669;
 }
 
-.example.example4 .success .icon .checkmark {
-  stroke: #d782d9;
+.example.example3 .success .icon .checkmark {
+  stroke: #fff;
 }
 
-.example.example4 .success .title {
-  color: #32325d;
+.example.example3 .success .title {
+  color: #fff;
 }
 
-.example.example4 .success .message {
-  color: #8898aa;
+.example.example3 .success .message {
+  color: #9cabc8;
 }
 
-.example.example4 .success .reset path {
-  fill: #d782d9;
+.example.example3 .success .reset path {
+  fill: #fff;
 }
 
 .btn-group {
