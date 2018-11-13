@@ -397,7 +397,6 @@ button:active {
 .example.example3 .field.focus,
 .example.example3 .field:focus {
   color: #424770;
-  background-color: #;
 }
 
 .example.example3 .field.invalid {
