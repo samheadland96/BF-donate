@@ -35,54 +35,54 @@
     <div class="col-sm-12 col-md-12 col-lg-7 mx-auto">
       <div class="donatebox" style="background:#fff;margin-top:;">
         <div class="col-sm-12 col-md-7 col-lg-7 mx-auto">
-        <!--  <form /action="donate-details-page.html" method="post" id="barnabas-donate-form" accept-charset="UTF-8">-->
-        <h1>Donate today</h1>
-        <div class="donation-type_wrapper">
-          <div class="btn-group btn-group-toggle " data-toggle="buttons">
-            <label class="btn donation_type active">
+          <!--  <form /action="donate-details-page.html" method="post" id="barnabas-donate-form" accept-charset="UTF-8">-->
+          <h1>Donate today</h1>
+          <div class="donation-type_wrapper">
+            <div class="btn-group btn-group-toggle " data-toggle="buttons">
+              <label class="btn donation_type active">
                      <input type="radio" value="regular" name="regular" id="regular" autocomplete="off" > Regular
                      </label>
-            <label class="btn donation_type">
+              <label class="btn donation_type">
                      <input type="radio" value="regular" name="single" id="single" autocomplete="off"> Single
                      </label>
+            </div>
           </div>
-        </div>
-        <div class="donation-amount_wrapper">
-          <div class="btn-group btn-group-toggle full-width " data-toggle="buttons">
-            <label class="btn donation_amount active">
+          <div class="donation-amount_wrapper">
+            <div class="btn-group btn-group-toggle full-width " data-toggle="buttons">
+              <label class="btn donation_amount active">
                      <input type="radio" name="amount1" id="amount1" autocomplete="off" > £10
-                     </label>
-            <label class="btn donation_amount">
+            </label>
+              <label class="btn donation_amount">
                      <input type="radio" name="amount2" id="amount2" autocomplete="off"> £50
-                     </label>
-            <label class="btn donation_amount">
+            </label>
+              <label class="btn donation_amount">
                      <input type="radio" name="amount3" id="amount3" autocomplete="off" > £100
-                     </label>
-            <label class="btn donation_amount">
-                     <input type="radio" name="otheramount" id="otheramount" autocomplete="off" ><a data-toggle="collapse" data-target="#otherAmount" aria-expanded="true" aria-controls="otherAmount"> Other</a>
-                     </label>
+            </label>
+              <label class="btn donation_amount" onclick="otherAmount()">
+                     <input type="radio" id="otheramount"  value="amountother" autocomplete="off" >Other
+            </label>
+            </div>
           </div>
-        </div>
-        <div class="collapse" id="otherAmount">
-          <span style="font-weight:bold;font-size:15px;">Please enter an amount:  £</span>
-          <input type="text" class="other-amount" name="regular" id="regular" autocomplete="off">
-        </div>
-        <div class="donation-projectchoice_wrapper">
-          <strong>
+          <div class="" style="display:none;margin-top:1em;" id="otheramountDiv">
+            <span style="font-weight:bold;font-size:15px;">Please enter an amount:  £</span>
+            <input type="text" class="other-amount" name="regular" id="regular" autocomplete="off">
+          </div>
+          <div class="donation-projectchoice_wrapper">
+            <strong>
                      <p>I want to give to:</p>
                   </strong>
-          <select id="project" class="project-choice" name="project"  onclick="showOther()">
+            <select id="project" class="project-choice" name="project" onclick="showOther()">
                      <option value="00-000">00-000: General Fund</option>
                      <option value="00-345">00-345: Victims of Violence Fund</option>
                      <option value="00-1313">00-1313: Project Joseph to feed hungry Christians in Africa Fund</option>
                      <option value="00-1313">00-1313: Project Joseph to feed hungry Christians in Africa Fund</option>
                      <option value="other" >Other Project</option>
                   </select>
-        </div>
+          </div>
 
-        <div id="otherDiv" style="display:none;margin-top:1em;">
-          <label for="gifttype" style="font-weight:bold;">Please select the specific Project you would like to give to:</label>
-          <select id="gifttype" class="my-details-input" name="gifttype">
+          <div id="otherDiv" style="display:none;margin-top:1em;">
+            <label for="gifttype" style="font-weight:bold;">Please select the specific Project you would like to give to:</label>
+            <select id="gifttype" class="my-details-input" name="gifttype">
 
               <option value="00-1031: Students� Fund">00-1031: Students� Fund</option>
               <option value="00-1032: Middle East Fund to help Christians in Syria">00-1032: Middle East Fund to help Christians in Syria</option>
@@ -244,14 +244,14 @@
               <option value="XX-1197: Medical fund for pastors and their families">XX-1197: Medical fund for pastors and their families</option>
               <option value="xx-1399: Flood-affected Christians in South-East Asia">xx-1399: Flood-affected Christians in South-East Asia</option>
           </select>
-        </div>
-        <div class="donate-buttons">
-          <a href="donate-details-page.html"><button
+          </div>
+          <div class="donate-buttons">
+            <a href="donate-details-page.html"><button
                      class="bf-donate">Donate now</button></a>
+          </div>
+          <!--   </form>-->
         </div>
-        <!--   </form>-->
       </div>
-    </div>
     </div>
   </section>
 
@@ -352,18 +352,29 @@
 
   <!-- Other project functionality -->
   <script>
-  function showOther() {
-    var projectValue = document.getElementById('project').value;
-    var other = document.getElementById('otherDiv').style;
-    if (projectValue == 'other'){
-    other.display = "block";
+    function showOther() {
+      var projectValue = document.getElementById('project').value;
+      var other = document.getElementById('otherDiv').style;
+      if (projectValue == 'other') {
+        other.display = "block";
+      } else {
+        other.display = "none";
+      }
     }
-    else
-    {
-    other.display = "none";
-    }
-  }
   </script>
+
+  <script>
+    function otherAmount() {
+      var projectValue = document.getElementById('amountother').value;
+      var other = document.getElementById('otheramountDiv').style;
+      if (projectValue == 'amountother') {
+        other.display = "block";
+      } else {
+        other.display = "none";
+      }
+    }
+  </script>
+
 </body>
 
 </html>

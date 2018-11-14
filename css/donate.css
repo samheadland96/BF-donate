@@ -236,7 +236,9 @@ button:active {
   padding: 1em 1em;
   font-weight: bold;
 }
-
+#giftaid-text p  {
+  font-weight: bold;
+}
 .donate-checkbox {
   margin: 0;
   position: relative;
