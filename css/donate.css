@@ -355,6 +355,7 @@ button:active {
   background-color: #004990;
   border-radius:0;
   padding:2em;
+  margin: 0 auto;
 }
 
 .example.example3 * {
