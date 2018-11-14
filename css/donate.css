@@ -503,7 +503,7 @@ button:active {
 
 /* Small devices (landscape phones, 576px and up) */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .donatebox {
     border: 1px solid #eee;
     margin-top: 1em;
