@@ -148,7 +148,7 @@ button:active {
   font-weight: normal;
   color: #004990;
   font-size: 1.5em;
-  margin: 1em;
+  padding: 2em 0;
 }
 
 
@@ -199,7 +199,7 @@ button:active {
 .my-details-input {
   width: 100%;
   padding: 10px 0 10px 10px;
-  border: 2px solid #5091cd;
+  border: 1px solid #5091cd;
   height: 50px;
   font-weight: normal;
   font-size: 1em;

@@ -38,16 +38,18 @@
           <!--  <form /action="donate-details-page.html" method="post" id="barnabas-donate-form" accept-charset="UTF-8">-->
           <h1>Donate today</h1>
           <div class="donation-type_wrapper">
-            <div class="btn-group btn-group-toggle " data-toggle="buttons">
+            <div class="btn-group btn-group-toggle" id="regulardonation" name="regulardonation" onclick="regularValue()" data-toggle="buttons">
               <label class="btn donation_type active">
                      <input type="radio" value="regular" name="regular" id="regular" autocomplete="off" > Regular
                      </label>
               <label class="btn donation_type">
-                     <input type="radio" value="regular" name="single" id="single" autocomplete="off"> Single
+                     <input type="radio"  name="single" id="single" autocomplete="off"> Single
                      </label>
             </div>
           </div>
-          <div class="donation-amount_wrapper">
+
+          <!-- DONATION AMOUNT - REGULAR -->
+          <div class="donation-amount_wrapper" id="amountRegular" style="display:none;">
             <div class="btn-group btn-group-toggle full-width " data-toggle="buttons">
               <label class="btn donation_amount active">
                      <input type="radio" name="amount1" id="amount1" autocomplete="off" > £10
@@ -63,6 +65,25 @@
             </label>
             </div>
           </div>
+          <!-- DONATION AMOUNT - SINGLE -->
+
+          <div class="donation-amount_wrapper">
+            <div class="btn-group btn-group-toggle full-width " data-toggle="buttons">
+              <label class="btn donation_amount active">
+                     <input type="radio" name="amount1" id="amount1" autocomplete="off" > £50
+            </label>
+              <label class="btn donation_amount">
+                     <input type="radio" name="amount2" id="amount2" autocomplete="off"> £100
+            </label>
+              <label class="btn donation_amount">
+                     <input type="radio" name="amount3" id="amount3" autocomplete="off" > £200
+            </label>
+              <label class="btn donation_amount" onclick="otherAmount()">
+                     <input type="radio" id="otheramount"  value="amountother" autocomplete="off" >Other
+            </label>
+            </div>
+          </div>
+
           <div class="" style="display:none;margin-top:1em;" id="otheramountDiv">
             <span style="font-weight:bold;font-size:15px;">Please enter an amount:  £</span>
             <input type="text" class="other-amount" name="regular" id="regular" autocomplete="off">
@@ -100,149 +121,7 @@
               <option value="00-362: Bibles and Scriptures Fund">00-362: Bibles and Scriptures Fund</option>
               <option value="00-430: Leadership Training Fund">00-430: Leadership Training Fund</option>
               <option value="00-477: Pastor Support Fund">00-477: Pastor Support Fund</option>
-              <option value="00-478: Evangelist Support Fund">00-478: Evangelist Support Fund</option>
-              <option value="00-479: Resources Fund">00-479: Resources Fund</option>
-              <option value="00-514: School-Place Sponsorship Fund">00-514: School-Place Sponsorship Fund</option>
-              <option value="00-568: West Africa Relief Fund">00-568: West Africa Relief Fund</option>
-              <option value="00-634: Disaster Relief Fund">00-634: Disaster Relief Fund</option>
-              <option value="00-635: Water Projects Fund">00-635: Water Projects Fund</option>
-              <option value="00-636: Feeding Fund">00-636: Feeding Fund</option>
-              <option value="00-637: Church Buildings Fund">00-637: Church Buildings Fund</option>
-              <option value="00-665: Children�s Fund">00-665: Children�s Fund</option>
-              <option value="00-671: Medical Fund">00-671: Medical Fund</option>
-              <option value="00-794: Christian Schooling for Christian Children">00-794: Christian Schooling for Christian Children</option>
-              <option value="00-977: Houses for Homeless Christians in South Asia">00-977: Houses for Homeless Christians in South Asia</option>
-              <option value="01-901: Needy and Persecuted Afghan Christians">01-901: Needy and Persecuted Afghan Christians</option>
-              <option value="01-998: Afghanistan General Fund">01-998: Afghanistan General Fund</option>
-              <option value="02-1045: Algeria � Christian Nursery">02-1045: Algeria � Christian Nursery</option>
-              <option value="02-900: Algeria General Fund">02-900: Algeria General Fund</option>
-              <option value="03-1192: Support for phone ministry worker">03-1192: Support for phone ministry worker</option>
-              <option value="03-1249: Summer Camp for new believers">03-1249: Summer Camp for new believers</option>
-              <option value="03-979: Azerbaijan General Fund">03-979: Azerbaijan General Fund</option>
-              <option value="04-1090: Feeding Christian Families">04-1090: Feeding Christian Families</option>
-              <option value="04-640: Bible Students Fellowship of Bangladesh">04-640: Bible Students Fellowship of Bangladesh</option>
-              <option value="04-831: Bangladesh General Fund">04-831: Bangladesh General Fund</option>
-              <option value="04-854: Winter Relief">04-854: Winter Relief</option>
-              <option value="04-933: Christian Schools">04-933: Christian Schools</option>
-              <option value="09-1187: Support for Prisoner Jiang Mao's Family">09-1187: Support for Prisoner Jiang Mao's Family</option>
-              <option value="09-780: China General Fund">09-780: China General Fund</option>
-              <option value="105-1172: Aid for Displaced Christians">105-1172: Aid for Displaced Christians</option>
-              <option value="105-1245: Motorbike taxis for Muslim background believers in CAR">105-1245: Motorbike taxis for Muslim background believers in CAR</option>
-              <option value="11-1203: Sudanese Children�s Learning Centre in Egypt">11-1203: Sudanese Children�s Learning Centre in Egypt</option>
-              <option value="11-1217: Youth Conference">11-1217: Youth Conference</option>
-              <option value="11-1240: Support for Families of 21 Egyptian Martyrs">11-1240: Support for Families of 21 Egyptian Martyrs</option>
-              <option value="11-220: Feeding Christian Families">11-220: Feeding Christian Families</option>
-              <option value="11-910: Egypt General Fund">11-910: Egypt General Fund</option>
-              <option value="12-954: Eritrean Christian Refugees">12-954: Eritrean Christian Refugees</option>
-              <option value="12-996: Eritrea General Fund">12-996: Eritrea General Fund</option>
-              <option value="13-920: Ethiopia General Fund">13-920: Ethiopia General Fund</option>
-              <option value="19-886: Persecuted Iranian Christians">19-886: Persecuted Iranian Christians</option>
-              <option value="20-227: Needy Iraqi Christians">20-227: Needy Iraqi Christians</option>
-              <option value="20-246: Food and Basic Needs for Christian families in Iraq">20-246: Food and Basic Needs for Christian families in Iraq</option>
-              <option value="20-383: Iraqi refugees in Syria, Jordan and Lebanon � Feeding programme">20-383: Iraqi refugees in Syria, Jordan and Lebanon � Feeding programme</option>
-              <option value="21-1226: Divya Shanthi Children's Ministry">21-1226: Divya Shanthi Children's Ministry</option>
-              <option value="21-1312: Divya Shanthi Child Sponsorship">21-1312: Divya Shanthi Child Sponsorship</option>
-              <option value="21-723: Victims of Anti-Christian Violence in Orissa">21-723: Victims of Anti-Christian Violence in Orissa</option>
-              <option value="21-930: India General Fund">21-930: India General Fund</option>
-              <option value="22-828: Church Planting">22-828: Church Planting</option>
-              <option value="22-860: Indonesia General Fund">22-860: Indonesia General Fund</option>
-              <option value="24-775: Kazakhstan General Fund">24-775: Kazakhstan General Fund</option>
-              <option value="25-017: Support for Kenyan Missionaries">25-017: Support for Kenyan Missionaries</option>
-              <option value="25-617: Kenya General Fund">25-617: Kenya General Fund</option>
-              <option value="25-663: Cana Girls� Rescue Home">25-663: Cana Girls� Rescue Home</option>
-              <option value="26-849: Kyrgyzstan General Fund">26-849: Kyrgyzstan General Fund</option>
-              <option value="26-895: Church Buildings">26-895: Church Buildings</option>
-              <option value="37-1221: Leadership Training in Mozambique">37-1221: Leadership Training in Mozambique</option>
-              <option value="38-1263: Repairing churches damaged by anti-Christian violence">38-1263: Repairing churches damaged by anti-Christian violence</option>
-              <option value="39-1284: Self-sufficiency for Nigerian widows">39-1284: Self-sufficiency for Nigerian widows</option>
-              <option value="39-1285: Nigerian orphans support">39-1285: Nigerian orphans support</option>
-              <option value="39-1286: Parents of kidnapped Chibok girls">39-1286: Parents of kidnapped Chibok girls</option>
-              <option value="39-301: Construction of Hostel for Boys">39-301: Construction of Hostel for Boys</option>
-              <option value="39-772: Victims of Violence in Nigeria">39-772: Victims of Violence in Nigeria</option>
-              <option value="39-970: Nigeria General Fund">39-970: Nigeria General Fund</option>
-              <option value="41-033: Motorbikes for clergy staff">41-033: Motorbikes for clergy staff</option>
-              <option value="41-035: Open Theological Seminary">41-035: Open Theological Seminary</option>
-              <option value="41-1046: Sewing and Literacy Centre for Women">41-1046: Sewing and Literacy Centre for Women</option>
-              <option value="41-1092: Christian School, Lahore">41-1092: Christian School, Lahore</option>
-              <option value="41-1094: Model High School &amp; Christian School">41-1094: Model High School &amp; Christian School</option>
-              <option value="41-1095: Abba Home Orphanage">41-1095: Abba Home Orphanage</option>
-              <option value="41-1103: Vocational Training Centre">41-1103: Vocational Training Centre</option>
-              <option value="41-1160: Hand Pumps, Pakistan">41-1160: Hand Pumps, Pakistan</option>
-              <option value="41-1209: Pakistan Schools">41-1209: Pakistan Schools</option>
-              <option value="41-1236: Support for schools in the Kot Radha Kishen area">41-1236: Support for schools in the Kot Radha Kishen area</option>
-              <option value="41-1237: 13 primary schools in Sindh">41-1237: 13 primary schools in Sindh</option>
-              <option value="41-1267: Girls Hostel in Pakistan">41-1267: Girls Hostel in Pakistan</option>
-              <option value="41-1315: Support for Adult Literacy Centres at 5 Brick Kiln Units near Raiwind Town">41-1315: Support for Adult Literacy Centres at 5 Brick Kiln Units near Raiwind Town</option>
-              <option value="41-1320: Pattoki Children's Homes">41-1320: Pattoki Children's Homes</option>
-              <option value="41-331: Feeding Christian Families">41-331: Feeding Christian Families</option>
-              <option value="41-432: Support for Christian Workers">41-432: Support for Christian Workers</option>
-              <option value="41-465: Refuge for Girls and Women">41-465: Refuge for Girls and Women</option>
-              <option value="41-499: Christian School, Rawalpindi">41-499: Christian School, Rawalpindi</option>
-              <option value="41-596: MIK Publishing House">41-596: MIK Publishing House</option>
-              <option value="41-645: Christian Lawyers Helping Abused Christians">41-645: Christian Lawyers Helping Abused Christians</option>
-              <option value="41-842: Christian Victims of Violence and Injustice">41-842: Christian Victims of Violence and Injustice</option>
-              <option value="41-893: Christian Schools in Multan">41-893: Christian Schools in Multan</option>
-              <option value="41-898: �School of Hope�">41-898: �School of Hope�</option>
-              <option value="41-948: Primary Schools for Deprived Christian Children">41-948: Primary Schools for Deprived Christian Children</option>
-              <option value="41-980: Pakistan General Fund">41-980: Pakistan General Fund</option>
-              <option value="43-669: Radio Outreach Ministry">43-669: Radio Outreach Ministry</option>
-              <option value="45-1096: Micro-credit Fund for Converts� Small Businesses">45-1096: Micro-credit Fund for Converts� Small Businesses</option>
-              <option value="48-1138: Meals for Sudanese refugee congregation">48-1138: Meals for Sudanese refugee congregation</option>
-              <option value="48-1171: Aid for Conflict Victims">48-1171: Aid for Conflict Victims</option>
-              <option value="48-1218: Mission Centre in South Sudan">48-1218: Mission Centre in South Sudan</option>
-              <option value="48-1227: Support for ICMDA's National Institute of Health Sciences' Training Course">48-1227: Support for ICMDA's National Institute of Health Sciences' Training Course</option>
-              <option value="48-575: Christian Prison Ministry">48-575: Christian Prison Ministry</option>
-              <option value="48-990: Sudan General Fund">48-990: Sudan General Fund</option>
-              <option value="48-991: South Sudan General Fund">48-991: South Sudan General Fund</option>
-              <option value="49-1307: Widows of War, Aleppo">49-1307: Widows of War, Aleppo</option>
-              <option value="49-890: Syria General Fund">49-890: Syria General Fund</option>
-              <option value="50-1248: Support for church youth workers">50-1248: Support for church youth workers</option>
-              <option value="50-770: Tajikistan General Fund">50-770: Tajikistan General Fund</option>
-              <option value="51-1105: Bible College Students� Support">51-1105: Bible College Students� Support</option>
-              <option value="51-1241: Swahili New Testaments for Tanzania">51-1241: Swahili New Testaments for Tanzania</option>
-              <option value="54-1324: Winter needs for refugees in Turkey">54-1324: Winter needs for refugees in Turkey</option>
-              <option value="54-363: USA Muslim World Outreach ">54-363: USA Muslim World Outreach </option>
-              <option value="54-750: Turkey General Fund">54-750: Turkey General Fund</option>
-              <option value="56-1091: Rehabilitation Centre for New Believers">56-1091: Rehabilitation Centre for New Believers</option>
-              <option value="56-641: Convert Care &amp; Outreach">56-641: Convert Care &amp; Outreach</option>
-              <option value="56-870: Uganda General Fund">56-870: Uganda General Fund</option>
-              <option value="57-776: Uzbekistan General Fund">57-776: Uzbekistan General Fund</option>
-              <option value="62-1205: Church building for Turkish-speaking congregation in Bulgaria">62-1205: Church building for Turkish-speaking congregation in Bulgaria</option>
-              <option value="63-1258: Albania General Fund">63-1258: Albania General Fund</option>
-              <option value="63-1273: Church, building, Albania">63-1273: Church, building, Albania</option>
-              <option value="64-1257: Nissar Hussain and Family Support">64-1257: Nissar Hussain and Family Support</option>
-              <option value="64-903: Operation Nehemiah">64-903: Operation Nehemiah</option>
-              <option value="64-978: ACTS School Packs">64-978: ACTS School Packs</option>
-              <option value="65-153: Holy Land Fund">65-153: Holy Land Fund</option>
-              <option value="65-251: Construction of new secondary school building">65-251: Construction of new secondary school building</option>
-              <option value="65-377: Food and Basic Needs">65-377: Food and Basic Needs</option>
-              <option value="65-420: Sponsoring Christian School Children in Bethlehem">65-420: Sponsoring Christian School Children in Bethlehem</option>
-              <option value="67-1302: Women and girls victims of violence">67-1302: Women and girls victims of violence</option>
-              <option value="75-1296: Hospitality training for young Christians">75-1296: Hospitality training for young Christians</option>
-              <option value="75-763: Aid for Persecuted Christians">75-763: Aid for Persecuted Christians</option>
-              <option value="75-810: Burma (Myanmar) General Fund">75-810: Burma (Myanmar) General Fund</option>
-              <option value="75-821: Burmese Christian orphans">75-821: Burmese Christian orphans</option>
-              <option value="79-993: Armenia General Fund">79-993: Armenia General Fund</option>
-              <option value="81-472: Leadership Training and Mission to Muslims">81-472: Leadership Training and Mission to Muslims</option>
-              <option value="82-1276: Schooling for Pakistani Christian Refugees in Thailand">82-1276: Schooling for Pakistani Christian Refugees in Thailand</option>
-              <option value="83-799: Vietnam General Fund">83-799: Vietnam General Fund</option>
-              <option value="85-760: Sri Lanka General Fund">85-760: Sri Lanka General Fund</option>
-              <option value="85-887: Sri Lanka Disaster Relief">85-887: Sri Lanka Disaster Relief</option>
-              <option value="85-927: Church Reconstruction">85-927: Church Reconstruction</option>
-              <option value="86-545: North Korea General Fund">86-545: North Korea General Fund</option>
-              <option value="86-642: Christian Bakeries">86-642: Christian Bakeries</option>
-              <option value="87-1259: Operation Safe Havens in Australia">87-1259: Operation Safe Havens in Australia</option>
-              <option value="89-992: Nepal General Fund">89-992: Nepal General Fund</option>
-              <option value="90-740: Laos General Fund">90-740: Laos General Fund</option>
-              <option value="91-721: Feeding in Zimbabwe">91-721: Feeding in Zimbabwe</option>
-              <option value="91-751: Agricultural training and start-up costs">91-751: Agricultural training and start-up costs</option>
-              <option value="91-806: Zimbabwe General Fund">91-806: Zimbabwe General Fund</option>
-              <option value="96-1196: Assistance to Christians in Ukraine">96-1196: Assistance to Christians in Ukraine</option>
-              <option value="96-1228: Ukraine General Fund">96-1228: Ukraine General Fund</option>
-              <option value="xx-1042: Bibles and Scriptures for Christians in a country of south-east Asia">xx-1042: Bibles and Scriptures for Christians in a country of south-east Asia</option>
-              <option value="xx-1174: Social Enterprises and Bible School in south-east Asia">xx-1174: Social Enterprises and Bible School in south-east Asia</option>
-              <option value="XX-1197: Medical fund for pastors and their families">XX-1197: Medical fund for pastors and their families</option>
-              <option value="xx-1399: Flood-affected Christians in South-East Asia">xx-1399: Flood-affected Christians in South-East Asia</option>
+              <option value="00-477: Pastor Support Fund">AND ALL THE OTHER PROJECTS</option>
           </select>
           </div>
           <div class="donate-buttons">
@@ -365,7 +244,7 @@
 
   <script>
     function otherAmount() {
-      var projectValue = document.getElementById('amountother').value;
+      var projectValue = document.getElementById('regulardonation').value;
       var other = document.getElementById('otheramountDiv').style;
       if (projectValue == 'amountother') {
         other.display = "block";
@@ -375,6 +254,17 @@
     }
   </script>
 
+  <script>
+    function regularDonation() {
+      var regularValue = document.getElementById('amountother').value;
+      var other = document.getElementById('amountRegular').style;
+      if (regularValue == 'regular') {
+        other.display = "block";
+      } else {
+        other.display = "none";
+      }
+    }
+  </script>
 </body>
 
 </html>
