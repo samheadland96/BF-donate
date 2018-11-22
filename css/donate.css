@@ -2,7 +2,7 @@ button {
   background: #5091CD;
   border: 0px;
   color: #ffffff;
-  padding: 1rem ;
+  padding: 1rem;
   text-transform: uppercase;
   border-radius: 5px;
   transition: 0.2s background;
@@ -22,6 +22,7 @@ button:active {
 .hide {
   display: none;
 }
+
 /* MAIN DONATE BOX */
 
 .donatebox {
@@ -70,6 +71,8 @@ button:active {
   border: 2px solid #5091cd;
   width: 100%;
   padding: 0.5em;
+  border-radius: 0;
+
 }
 
 .donation_type.active {
@@ -87,7 +90,7 @@ button:active {
   margin: 0 auto;
   display: inline-block;
   text-align: center;
-  padding: 1em 0;
+  padding: 1em 0 0 0;
   width: 100%;
 }
 
@@ -98,7 +101,7 @@ button:active {
   text-align: center;
   font-weight: bold;
   color: #5091cd;
-  border-radius: 3px;
+  border-radius: 0;
   text-transform: none;
   background: #fff;
   width: 100%;
@@ -119,9 +122,6 @@ button:active {
   color: #fff;
 }
 
-#otherAmount {
-  padding: 0.5em 0;
-}
 
 .other-amount {
   border: 2px solid #5091cd;
@@ -129,9 +129,13 @@ button:active {
   width: 100px;
   padding: 10px 0 10px 10px;
 }
+
 #otheramount {
   transition: all 1s ease-in;
+  padding: 1em 0;
+
 }
+
 .donation-projectchoice_wrapper {
   padding: 0;
 }
@@ -187,6 +191,10 @@ button:active {
   padding: 1em 0 0 0;
 }
 
+.back-link {
+  font-weight: bold;
+  color: #5091cd;
+}
 
 /* PERSONAL DETAILS PAGE */
 
@@ -501,6 +509,8 @@ button:active {
 
 .btn-group {
   width: 100%;
+  padding-left:0;
+  border-radius: 0;
 }
 
 

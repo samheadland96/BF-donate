@@ -37,7 +37,7 @@
   </section>
   <section>
     </div>
-    <div class="col-sm-12 col-md-12 col-lg-7 mx-auto">
+    <div class="col-sm-12 col-md-12 col-lg-6 mx-auto">
       <div class="donatebox" style="background:#fff;margin-top:;">
         <div class="col-sm-12 col-md-7 col-lg-7 mx-auto">
           <!--  <form /action="donate-details-page.html" method="post" id="barnabas-donate-form" accept-charset="UTF-8">-->
@@ -58,16 +58,16 @@
 
           <div class="donation-amount_wrapper">
             <ul class="btn-group btn-group-toggle full-width " data-toggle="buttons">
-              <li class="btn donation_amount active" onclick="show1();" >
+              <li class="btn donation_amount active" onclick="hideOther();" >
                 <input type="radio" name="amounts" id="amount1" autocomplete="off"> £50
               </li>
-              <li class="btn donation_amount" onclick="show1();" >
+              <li class="btn donation_amount" onclick="hideOther();" >
                 <input type="radio" name="amounts" id="amount2"  autocomplete="off"> £100
               </li>
-              <li class="btn donation_amount" onclick="show1();" >
+              <li class="btn donation_amount" onclick="hideOther();" >
                 <input type="radio" name="amounts" id="amount3" autocomplete="off"> £200
               </li>
-              <li class="btn donation_amount" id="other" onclick="show2();">
+              <li class="btn donation_amount" id="other" onclick="showOther();">
                 <input type="radio" name="" id="" name='thing' value="" onclick="show2();" autocomplete="off">Other
               </li>
               
@@ -263,10 +263,10 @@
   </script>
 
 <script type="text/javascript">
-function show1(){
+function hideOther(){
   document.getElementById('otheramount').style.display ='none';
 }
-function show2(){
+function showOther(){
   document.getElementById('otheramount').style.display = 'block';
 }
   
