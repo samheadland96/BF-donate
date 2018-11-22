@@ -2,9 +2,8 @@ button {
   background: #5091CD;
   border: 0px;
   color: #ffffff;
-  padding: 1rem 3rem;
+  padding: 1rem ;
   text-transform: uppercase;
-  line-height: 2.2rem;
   border-radius: 5px;
   transition: 0.2s background;
 }
@@ -92,7 +91,6 @@ button:active {
 .donation_amount {
   border: 2px solid #5091cd;
   padding: 1em;
-  margin: ;
   font-size: 1.2em;
   text-align: center;
   font-weight: bold;
@@ -139,9 +137,7 @@ button:active {
   padding: 10px 0 10px 10px;
   border: 2px solid #5091cd;
   height: 50px;
-  border-radius: ;
   font-size: 1em;
-  font-weight: ;
 }
 
 .i-want-give-heading {
@@ -168,7 +164,6 @@ button:active {
 
 .bf-donate {
   font-size: 18px;
-  width: ;
   background: #d61215;
   color: #fff;
   text-decoration: none;
@@ -215,8 +210,6 @@ button:active {
 }
 
 .donate-h3 {
-  text-transform: ;
-  color: ;
   font-weight: bold;
   font-size: 1.2em;
   padding: 1em 0;
@@ -254,7 +247,6 @@ button:active {
 
 .other-ways-heading {
   color: #fff;
-  padding: ;
   background-color: none;
   cursor: pointer;
 }
@@ -316,9 +308,7 @@ button:active {
 
 /* On mouse-over, add a grey background color */
 
-.checkbox-container:hover input~.checkmark {
-  background-color: #;
-}
+.checkbox-container:hover input~.checkmark {}
 
 
 /* When the checkbox is checked, add a blue background */
@@ -402,7 +392,8 @@ button:active {
   margin-top: 6px;
 }
 
-.example.example3 .field.focus, .example.example3 .field:focus {
+.example.example3 .field.focus,
+.example.example3 .field:focus {
   color: #424770;
 }
 
@@ -414,19 +405,23 @@ button:active {
   background-color: #f6f9fc;
 }
 
-.example.example3 .field.focus::-webkit-input-placeholder, .example.example3 .field:focus::-webkit-input-placeholder {
+.example.example3 .field.focus::-webkit-input-placeholder,
+.example.example3 .field:focus::-webkit-input-placeholder {
   color: #CFD7DF;
 }
 
-.example.example3 .field.focus::-moz-placeholder, .example.example3 .field:focus::-moz-placeholder {
+.example.example3 .field.focus::-moz-placeholder,
+.example.example3 .field:focus::-moz-placeholder {
   color: #CFD7DF;
 }
 
-.example.example3 .field.focus:-ms-input-placeholder, .example.example3 .field:focus:-ms-input-placeholder {
+.example.example3 .field.focus:-ms-input-placeholder,
+.example.example3 .field:focus:-ms-input-placeholder {
   color: #CFD7DF;
 }
 
-.example.example3 input, .example.example3 button {
+.example.example3 input,
+.example.example3 button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
