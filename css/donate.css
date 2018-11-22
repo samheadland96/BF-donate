@@ -212,6 +212,8 @@ button:active {
   font-weight: normal;
   font-size: 1em;
   color: #000;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 .donate-h2 {
