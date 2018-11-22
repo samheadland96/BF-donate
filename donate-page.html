@@ -54,44 +54,28 @@
             </div>
           </div>
 
-          <!-- DONATION AMOUNT - REGULAR -->
-          <div class="donation-amount_wrapper" id="amountRegular" style="display:none;">
-            <div class="btn-group btn-group-toggle full-width " data-toggle="buttons">
-              <label class="btn donation_amount active">
-                <input type="radio" name="amount1" id="amount1" autocomplete="off"> £10
-              </label>
-              <label class="btn donation_amount">
-                <input type="radio" name="amount2" id="amount2" autocomplete="off"> £50
-              </label>
-              <label class="btn donation_amount">
-                <input type="radio" name="amount3" id="amount3" autocomplete="off"> £100
-              </label>
-              <label class="btn donation_amount" onclick="otherAmount()">
-                <input type="radio" id="otheramount" value="amountother" autocomplete="off">Other
-              </label>
-            </div>
-          </div>
-          <!-- DONATION AMOUNT - SINGLE -->
+                   <!-- DONATION AMOUNT - SINGLE -->
 
           <div class="donation-amount_wrapper">
-            <div class="btn-group btn-group-toggle full-width " data-toggle="buttons">
-              <label class="btn donation_amount active">
-                <input type="radio" name="amount1" id="amount1" autocomplete="off"> £50
-              </label>
-              <label class="btn donation_amount">
-                <input type="radio" name="amount2" id="amount2" autocomplete="off"> £100
-              </label>
-              <label class="btn donation_amount">
-                <input type="radio" name="amount3" id="amount3" autocomplete="off"> £200
-              </label>
-              <label class="btn donation_amount" onclick="otherAmount()">
-                <input type="radio" id="otheramount" value="amountother" autocomplete="off">Other
-              </label>
-            </div>
+            <ul class="btn-group btn-group-toggle full-width " data-toggle="buttons">
+              <li class="btn donation_amount active" onclick="show1();" >
+                <input type="radio" name="amounts" id="amount1" autocomplete="off"> £50
+              </li>
+              <li class="btn donation_amount" onclick="show1();" >
+                <input type="radio" name="amounts" id="amount2"  autocomplete="off"> £100
+              </li>
+              <li class="btn donation_amount" onclick="show1();" >
+                <input type="radio" name="amounts" id="amount3" autocomplete="off"> £200
+              </li>
+              <li class="btn donation_amount" id="other" onclick="show2();">
+                <input type="radio" name="" id="" name='thing' value="" onclick="show2();" autocomplete="off">Other
+              </li>
+              
+            </ul>
           </div>
 
-          <div class="" style="display:none;margin-top:1em;" id="otheramountDiv">
-            <span style="font-weight:bold;font-size:15px;">Please enter an amount: £</span>
+          <div id="otheramount" class="hide">
+                        <span style="font-weight:bold;font-size:15px;">Please enter an amount: £</span>
             <input type="text" class="other-amount" name="regular" id="regular" autocomplete="off">
           </div>
           <div class="donation-projectchoice_wrapper">
@@ -278,10 +262,20 @@
     }
   </script>
 
+<script type="text/javascript">
+function show1(){
+  document.getElementById('otheramount').style.display ='none';
+}
+function show2(){
+  document.getElementById('otheramount').style.display = 'block';
+}
+  
+  </script>
+
   <script>
     function regularDonation() {
       var regularValue = document.getElementById('amountother').value;
-      var other = document.getElementById('amountRegular').style;
+      var other = document.getElementById('').style;
       if (regularValue == 'regular') {
         other.display = "block";
       } else {
