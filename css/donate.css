@@ -5,7 +5,7 @@ button {
   padding: 1rem;
   text-transform: uppercase;
   border-radius: 5px;
-  transition: 0.2s background;
+  transition: 0.2s ease;
 }
 
 button:hover {
@@ -17,10 +17,27 @@ button:active {
   background: #fff;
   color: #004990;
 }
-
+.no-margin {
+  margin:0;
+}
+.no-padding {
+  padding: 0;
+}
 
 .hide {
   display: none;
+}
+
+/* HEADER */
+.logo {
+  text-align: center;
+  padding: 1em;
+}
+
+.secure-donation {
+  padding-right: 1em;
+  color: #2e3131;
+  margin:0;
 }
 
 /* MAIN DONATE BOX */
@@ -35,6 +52,7 @@ button:active {
   border-right: 1px solid #eee;
   border-left: 1px solid #eee;
   margin-top: -5em;
+  background: #ffffff;
 }
 
 .donatebox h1 {
@@ -140,13 +158,18 @@ button:active {
   padding: 0;
 }
 
-.project-choice {
+select {
   width: 100%;
   margin: 0;
   padding: 10px 0 10px 10px;
   border: 2px solid #5091cd;
   height: 50px;
   font-size: 1em;
+  background: transparent url(https://barnabasfund.org/sites/default/files/images/assets/donate/chevron-down.svg) no-repeat right 10px center;
+  background-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .i-want-give-heading {
@@ -157,19 +180,12 @@ button:active {
 }
 
 
-/* Donation pay button */
+/* Donate now button */
 
 .donate-buttons {
   margin: 1em 0;
 }
 
-.pay-by-buttons {
-  background: #b11416;
-}
-
-.btn-clicked {
-  background: #5091cd;
-}
 
 .bf-donate {
   font-size: 18px;
@@ -511,7 +527,7 @@ button:active {
 
 .btn-group {
   width: 100%;
-  padding-left:0;
+  padding-left: 0;
   border-radius: 0;
 }
 

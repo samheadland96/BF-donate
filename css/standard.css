@@ -18,9 +18,7 @@
 	body, button, input,span {
 		font-size: 1.8rem;
 	}
-label {
-	font-size: 1em;
-}
+
 /* Relative sizes */
 	.small {
 		font-size: 75%;
@@ -670,16 +668,7 @@ label {
 
 /* Forms */
 
-	form input[type=text],form  select{
-		padding: 1rem;
-		width: 100%;
-		display: inline-block;
-		border: 1px solid #ccc;
-		border-radius: 4px;
-		box-sizing: border-box;
-		margin: 0rem 0rem 1rem 0rem;
-		font-size: 1.8rem;color:#000;
-	}
+
 
 	form label {
 		/*float: left;*/

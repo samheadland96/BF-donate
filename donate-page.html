@@ -18,16 +18,30 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="css/example4.css" data-rel-css="" />
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('input[type="radio"]').click(function () {
+        var inputValue = $(this).attr("value");
+        var targetBox = $("." + inputValue);
+        $(".box").not(targetBox).hide();
+        $(targetBox).show();
+      });
+    });
+  </script>
+  </script>
 </head>
 
 <body>
-  <!-- Header Start -->
+  <!-- Header -->
   <header>
     <div class="d-flex align-items-center justify-content-between" id="">
-      <div id="" style="text-align:center;padding:1em ;"><img src="img/barnabas-blue-logo_GB.png"></div>
-      <p style="padding-right:1em;color:#2e3131"><strong>Secure Donation</strong> <i class="fas fa-lock"></i></p>
+      <div class="logo"><img src="img/barnabas-blue-logo_GB.png"></div>
+      <p class="secure-donation"><strong>Secure Donation</strong> <i class="fas fa-lock"></i></p>
     </div>
   </header>
+
   <section>
     <picture>
       <source media="(min-width: 650px)" srcset="img/donate-header_main.png">
@@ -35,54 +49,56 @@
       <img src="img/donate-header_mobile.png" alt="" style="width:100%;">
     </picture>
   </section>
+
   <section>
     </div>
     <div class="col-sm-12 col-md-12 col-lg-6 mx-auto">
-      <div class="donatebox" style="background:#fff;margin-top:;">
+      <div class="donatebox">
         <div class="col-sm-12 col-md-7 col-lg-7 mx-auto">
           <!--  <form /action="donate-details-page.html" method="post" id="barnabas-donate-form" accept-charset="UTF-8">-->
           <h1>Donate today</h1>
           <div class="donation-type_wrapper">
-            <div class="btn-group btn-group-toggle" id="regulardonation" name="regulardonation" onclick="regularValue()"
-              data-toggle="buttons">
-              <label class="btn donation_type active">
-                <input type="radio" value="regular" name="regular" id="regular" autocomplete="off"> Regular
-              </label>
-              <label class="btn donation_type">
+            <ul class="btn-group btn-group-toggle no-margin" data-toggle="buttons">
+              <li class="btn donation_type active">
+                <input type="radio" value="regular" name="regular" id="regular" checked="checked" autocomplete="off">
+                Regular
+              </li>
+              <li class="btn donation_type">
                 <input type="radio" name="single" id="single" autocomplete="off"> Single
-              </label>
-            </div>
+              </li>
+            </ul>
           </div>
 
-                   <!-- DONATION AMOUNT - SINGLE -->
+          <!-- DONATION AMOUNT - SINGLE -->
 
-          <div class="donation-amount_wrapper">
+          <div class="donation-amount_wrapper hide" id="singleblock">
             <ul class="btn-group btn-group-toggle full-width " data-toggle="buttons">
-              <li class="btn donation_amount active" onclick="hideOther();" >
+              <li class="btn donation_amount active" onclick="hideOther();">
                 <input type="radio" name="amounts" id="amount1" autocomplete="off"> £50
               </li>
-              <li class="btn donation_amount" onclick="hideOther();" >
-                <input type="radio" name="amounts" id="amount2"  autocomplete="off"> £100
+              <li class="btn donation_amount" onclick="hideOther();">
+                <input type="radio" name="amounts" id="amount2" autocomplete="off"> £100
               </li>
-              <li class="btn donation_amount" onclick="hideOther();" >
+              <li class="btn donation_amount" onclick="hideOther();">
                 <input type="radio" name="amounts" id="amount3" autocomplete="off"> £200
               </li>
               <li class="btn donation_amount" id="other" onclick="showOther();">
                 <input type="radio" name="" id="" name='thing' value="" onclick="show2();" autocomplete="off">Other
               </li>
-              
+
             </ul>
           </div>
 
+
           <div id="otheramount" class="hide">
-                        <span style="font-weight:bold;font-size:15px;">Please enter an amount: £</span>
+            <span style="font-weight:bold;font-size:15px;">Please enter an amount: £</span>
             <input type="text" class="other-amount" name="regular" id="regular" autocomplete="off">
           </div>
           <div class="donation-projectchoice_wrapper">
             <strong>
               <p>I want to give to:</p>
             </strong>
-            <select id="project" class="project-choice" name="project" onclick="showOther()">
+            <select id="project" class="project-choice" name="project" onclick="showotherProjects()">
               <option value="00-000">00-000: General Fund</option>
               <option value="00-345">00-345: Victims of Violence Fund</option>
               <option value="00-1313">00-1313: Project Joseph to feed hungry Christians in Africa Fund</option>
@@ -239,7 +255,7 @@
 
   <!-- Other project functionality -->
   <script>
-    function showOther() {
+    function showotherProjects() {
       var projectValue = document.getElementById('project').value;
       var other = document.getElementById('otherDiv').style;
       if (projectValue == 'other') {
@@ -262,15 +278,16 @@
     }
   </script>
 
-<script type="text/javascript">
-function hideOther(){
-  document.getElementById('otheramount').style.display ='none';
-}
-function showOther(){
-  document.getElementById('otheramount').style.display = 'block';
-}
-  
+  <script type="text/javascript">
+    function hideOther() {
+      document.getElementById('otheramount').style.display = 'none';
+    }
+
+    function showOther() {
+      document.getElementById('otheramount').style.display = 'block';
+    }
   </script>
+
 
   <script>
     function regularDonation() {
