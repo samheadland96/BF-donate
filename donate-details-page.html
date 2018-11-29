@@ -33,226 +33,229 @@
     </div>
   </header>
 
-<div class="giving-header">
-  <div style="background:#eee;padding:0.5em 0;;">
-    <h1 class="i-want-give-heading" style="text-align:center;">I want to give <strong style="font-size:1.5em;">£10.00</strong>
-      to the<br /><span style="color:#5091cd;"><strong>00-000 General Fund</strong></span></h1>
+  <div class="giving-header">
+    <div style="background:#eee;padding:0.5em 0;;">
+      <h1 class="i-want-give-heading" style="text-align:center;">I want to give <span class="giving-header-amount" style="font-size:1.5em;">£10.00</span>
+        to the<br /><span style="color:#5091cd;"><strong>00-000 General Fund</strong></span></h1>
+    </div>
   </div>
-</div>
 
-<div class="form">
-  <div class="col-sm-12 col-md-12 col-lg-5 mx-auto">
-    <div class="donate-back">
-      <div class="my-4">
-        <div class="d-flex align-items-start flex-column">
-          <a class="back-link" href="donate-page.html"><i class="fas fa-caret-left"></i> Back</a>
+  <div class="form">
+    <div class="col-sm-12 col-md-12 col-lg-5 mx-auto">
+      <div class="donate-back">
+        <div class="my-4">
+          <div class="d-flex align-items-start flex-column">
+            <a class="back-link" href="donate-page.html"><i class="fas fa-caret-left"></i> Back</a>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- GIFT AID -->
-    <div class="donate-giftaid">
+      <!-- GIFT AID -->
+      <div class="donate-giftaid">
+
+        <div class="my-5">
+          <div class="d-flex align-items-center justify-content-between">
+            <img class="gift-aid-logo" src="img/Gift-Aid-logo.png" >
+          </div>
+          <h3 class="donate-h3">Turn your donation into <span style="font-size:1.5em;font-weight:bold;color:#5091cd;">£12.50</span>
+            at no extra cost to you</h3>
+
+          <div class="gift-aid-claim" data-toggle="collapse" data-target="#giftaid-text" aria-expanded="false"
+            aria-controls="giftaid-text">
+            <label class="checkbox-container">
+              <input type="checkbox">Yes, I would like Barnabas Fund to claim Gift Aid
+              <span class="checkmark"></span>
+            </label>
+
+          </div>
+          <div class="collapse" id="giftaid-text">
+            <p class="giftaid-text-reveal">I want to Gift Aid this donation and any donations I make in the future or have made in the past to
+              Barnabas Fund. I am a UK taxpayer and understand that if I pay less Income Tax and/or Capital Gains Tax
+              than the amount of Gift Aid claimed on all my donations in that tax year it is my responsibility to pay
+              any
+              difference.
+            </p>
+          </div>
+
+          <p><small>Note: Please notify Barnabas Fund if your circumstances change. If you pay Income Tax at the higher
+              or additional rate and want to receive the additional tax relief due to you, you must include all your
+              Gift
+              Aid donations on your Self-Assessment tax return or ask HM Revenue and Customs to adjust your tax code.
+            </small></p>
+        </div>
+      </div>
+
+      <!-- MY DETAILS -->
+      <div class="donate-mydetails">
+
+        <!-- <form action="card-details-page.html" method="post" id="" accept-charset="UTF-8" novalidate>-->
+        <h2 class="donate-h2">My details</h2>
+
+        <label class="form-field-label">Name *</label>
+        <div class="form-row">
+          <div class="col-md-2 mb-3">
+            <select class="form-field-input" name="country" required>
+              <option value="">Mr</option>
+              <option value="">Mrs</option>
+              <option value="">Ms</option>
+              <option value="">Miss</option>
+              <option value="">Dr</option>
+              <option value="">Rev</option>
+              <option value="">Other</option>
+            </select>
+          </div>
+          <div class="col-md-5 mb-3">
+            <input type="text" class="form-field-input" id="validationCustom02" placeholder="First name" value=""
+              required>
+          </div>
+          <div class="col-md-5 mb-3">
+            <div class="input-group">
+              <input type="text" class="form-field-input" id="validationCustomUsername" placeholder="Last name"
+                aria-describedby="inputGroupPrepend" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-field-wrapper">
+          <label class="form-field-label">Country *</label>
+          <select class="form-field-input" name="country">
+            <option value="United Kingdom">United Kindom</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Australia">Australia</option>
+            <option value="United States">United States</option>
+          </select>
+        </div>
+        <label class="form-field-label">Postcode *</label>
+        <div class="input-group form-field mb-3">
+          <input type="text" class="form-control form-field-input" placeholder="">
+          <div class="input-group-append">
+            <button class="btn find-address" type="button" data-toggle="collapse" data-target="#address-option"
+              aria-expanded="false" aria-controls="address-option">Find address</button>
+          </div>
+        </div>
+        <div class="collapse" id="address-option">
+          <div class="form-field-wrapper">
+            <label class="form-field-label">Select your address</label>
+            <select class="form-field-input" name="">
+              <option value="" placeholder="Select address">Please select</option>
+              <option value="United Kingdom">70 Pewsey Road, SN3 2HA</option>
+              <option value="New Zealand">71 Pewsey Road, SN3 2HA</option>
+              <option value="Australia">72 Pewsey Road, SN3 2HA</option>
+              <option value="United States">73 Pewsey Road, SN3 2HA</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-field-wrapper">
+          <a class="pointer enter-address" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+            aria-controls="collapseExample">Or enter address manually</a>
+          <div class="collapse" id="collapseExample">
+            <div class="form-field-wrapper">
+              <label class="form-field-label">Address 1 *</label>
+              <input type="text" class="form-field-input">
+            </div>
+            <div class="form-field-wrapper">
+              <label class="form-field-label">Address 2</label>
+              <input type="text" class="form-field-input">
+            </div>
+            <div class="form-field-wrapper">
+              <label class="form-field-label">City / Town *</label>
+              <input type="text" class="form-field-input">
+            </div>
+            <div class="form-field-wrapper">
+              <label class="form-field-label">State / County</label>
+              <input type="text" class="form-field-input">
+            </div>
+          </div>
+        </div>
+        <div class="form-field-wrapper">
+          <label class="form-field-label">Email *</label>
+          <input type="text" class="form-field-input">
+        </div>
+        <div class="form-field-wrapper">
+          <label class="form-field-label">Telephone (Optional)</label>
+          <input type="text" class="form-field-input">
+        </div>
+        <div class="form-field-wrapper">
+          <label class="form-field-label">How did you hear about us?</label>
+          <select class="form-field-input" name="">
+            <option value="" placeholder="">Please select</option>
+            <option value="">Church</option>
+            <option value="">Word of mouth</option>
+            <option value="">Online search</option>
+            <option value="">Emails</option>
+            <option value="">Radio</option>
+            <option value="">Speaker</option>
+            <option value="">Event</option>
+            <option value="">Social media</option>
+            <option value="">Barnabas aid magazine</option>
+            <option value="">Barnabas aid magazine</option>
+
+            <option value="">Other</option>
+
+          </select>
+
+        </div>
+      </div>
+      <!-- STAY IN TOUCH -->
 
       <div class="my-5">
-        <div class="d-flex align-items-center justify-content-between" id="">
-
-          <h2 class="donate-h2">Gift Aid</h2>
-          <img src="img/Gift-Aid-logo.png" style="width:200px;">
-        </div>
-        <h3 class="donate-h3">Turn your donation into <span style="font-size:1.5em;font-weight:bold;color:#5091cd;">£12.50</span>
-          at no extra cost to you</h3>
-
-        <div class="gift-aid-claim" data-toggle="collapse" data-target="#giftaid-text" aria-expanded="false"
-          aria-controls="giftaid-text">
+        <h2 class="donate-h2">Stay in touch</h2>
+        <p>We'd like to stay in touch with you in the future about what we are doing to help the persecuted church. Please let us know all the ways you would like to hear from us:</p>
+        <div class="gift-aid-claim">
           <label class="checkbox-container">
-            <input type="checkbox">Yes, I would like Barnabas Fund to claim Gift Aid
+            <input type="checkbox">By email
             <span class="checkmark"></span>
           </label>
-
+          </br>
+          <label class="checkbox-container">
+            <input type="checkbox">By post
+            <span class="checkmark"></span>
+          </label>
         </div>
-        <div class="collapse" id="giftaid-text">
-          <p>I want to Gift Aid this donation and any donations I make in the future or have made in the past to
-            Barnabas Fund. I am a UK taxpayer and understand that if I pay less Income Tax and/or Capital Gains Tax
-            than the amount of Gift Aid claimed on all my donations in that tax year it is my responsibility to pay any
-            difference.
-          </p>
-        </div>
-
-        <p><small>Note: Please notify Barnabas Fund if your circumstances change. If you pay Income Tax at the higher
-            or additional rate and want to receive the additional tax relief due to you, you must include all your Gift
-            Aid donations on your Self-Assessment tax return or ask HM Revenue and Customs to adjust your tax code.
-          </small></p>
+        <p>We will treat your information with respect. To see our privacy policy please click
+          <strong><a href="/about/privacy-policy">here</a></strong>.</p>
       </div>
-    </div>
 
-    <!-- MY DETAILS -->
-    <div class="donate-mydetails">
 
-      <!-- <form action="card-details-page.html" method="post" id="" accept-charset="UTF-8" novalidate>-->
-      <h2 class="donate-h2">My details</h2>
+      <div class="my-5">
+        <h2 class="donate-h2">My Payment</h2>
+        <p><strong>Please choose payment option:</strong></p>
 
-      <label class="form-field-label">Name *</label>
-      <div class="form-row">
-        <div class="col-md-2 mb-3">
-          <select class="my-details-input" name="country" required>
-            <option value="">Mr</option>
-            <option value="">Mrs</option>
-            <option value="">Ms</option>
-            <option value="">Miss</option>
-            <option value="">Dr</option>
-            <option value="">Rev</option>
-            <option value="">Other</option>
-          </select>
-        </div>
-        <div class="col-md-5 mb-3">
-          <input type="text" class="my-details-input" id="validationCustom02" placeholder="First name" value=""
-            required>
-        </div>
-        <div class="col-md-5 mb-3">
-          <div class="input-group">
-            <input type="text" class="my-details-input" id="validationCustomUsername" placeholder="Last name"
-              aria-describedby="inputGroupPrepend" required>
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 my-1">
+            <button class="btn btn-pay-by" href=""> <i class="fab fa-paypal"></i>
+              Paypal</button>
+
+          </div>
+          <div class="col-sm-12 col-lg-6 my-1">
+            <a href="card-details-page.html">
+              <button class="btn btn-pay-by">
+                <i class="far fa-credit-card"></i> Card</button></a>
+
           </div>
         </div>
-      </div>
-
-      <div class="form-field-wrapper">
-        <label class="form-field-label">Country *</label>
-        <select class="my-details-input" name="country">
-          <option value="United Kingdom">United Kindom</option>
-          <option value="New Zealand">New Zealand</option>
-          <option value="Australia">Australia</option>
-          <option value="United States">United States</option>
-        </select>
-      </div>
-      <label class="form-field-label">Postcode *</label>
-      <div class="input-group form-field mb-3">
-        <input type="text" class="form-control my-details-input" placeholder="">
-        <div class="input-group-append">
-          <button class="btn find-address" type="button" data-toggle="collapse" data-target="#address-option"
-            aria-expanded="false" aria-controls="address-option">Find address</button>
-        </div>
-      </div>
-      <div class="collapse" id="address-option">
-        <div class="form-field-wrapper">
-          <label class="form-field-label">Select your address</label>
-          <select class="my-details-input" name="">
-            <option value="" placeholder="Select address">Please select</option>
-            <option value="United Kingdom">70 Pewsey Road, SN3 2HA</option>
-            <option value="New Zealand">71 Pewsey Road, SN3 2HA</option>
-            <option value="Australia">72 Pewsey Road, SN3 2HA</option>
-            <option value="United States">73 Pewsey Road, SN3 2HA</option>
-          </select>
-        </div>
-      </div>
-      <div class="form-field-wrapper">
-        <a class="pointer" data-toggle="collapse" data-target="#collapseExample"
-          aria-expanded="false" aria-controls="collapseExample">
-          Enter address manually
-        </a>
-        <div class="collapse" id="collapseExample">
-          <div class="form-field-wrapper">
-            <label class="form-field-label">Address 1 *</label>
-            <input type="text" class="my-details-input">
-          </div>
-          <div class="form-field-wrapper">
-            <label class="form-field-label">Address 2</label>
-            <input type="text" class="my-details-input">
-          </div>
-          <div class="form-field-wrapper">
-            <label class="form-field-label">City / Town *</label>
-            <input type="text" class="my-details-input">
-          </div>
-          <div class="form-field-wrapper">
-            <label class="form-field-label">State / County</label>
-            <input type="text" class="my-details-input">
-          </div>
-        </div>
-      </div>
-      <div class="form-field-wrapper">
-        <label class="form-field-label">Email *</label>
-        <input type="text" class="my-details-input">
-      </div>
-      <div class="form-field-wrapper">
-        <label class="form-field-label">Telephone (Optional)</label>
-        <input type="text" class="my-details-input">
-      </div>
-      <div class="form-field-wrapper">
-        <label class="form-field-label">How did you hear about us?</label>
-        <select class="my-details-input" name="">
-          <option value="" placeholder="">Please select</option>
-          <option value="">Barnabas Aid Magazine</option>
-          <option value="">Social Media</option>
-          <option value="">Online Search</option>
-          <option value="">Word of mouth</option>
-          <option value="">Church</option>
-          <option value="">Printed advert</option>
-          <option value="">Other</option>
-        </select>
-
-      </div>
-    </div>
-    <!-- STAY IN TOUCH -->
-
-    <div class="my-5">
-      <h2 class="donate-h2">Stay in touch</h2>
-      <p>Barnabas Fund will use the information you provide on this form to be in touch with you and to provide updates
-        and marketing. Please let us know all the ways you would like to hear from us:</p>
-      <div class="gift-aid-claim">
-        <label class="checkbox-container">
-          <input type="checkbox">By email
-          <span class="checkmark"></span>
-        </label>
-        </br>
-        <label class="checkbox-container">
-          <input type="checkbox">By post
-          <span class="checkmark"></span>
-        </label>
-      </div>
-      <p>We will treat your information with respect. For more information about our privacy practices please click
-        here. By clicking below to submit this form, you agree that we may process your information in accordance with
-        these terms.</p>
-    </div>
 
 
-    <div class="my-5">
-      <h2 class="donate-h2">My Payment</h2>
-      <p><strong>Please choose payment option:</strong></p>
-
-      <div class="row">
-        <div class="col-sm-12 col-lg-6 my-1">
-          <button class="button__makepayment" style="width:100%;background:#b11416;font-size:1.3em;font-weight:bold;" href=""> <i class="fab fa-paypal"></i>
-            Paypal</button>
-
-        </div>
-        <div class="col-sm-12 col-lg-6 my-1">
-          <a href="card-details-page.html"><button style="width:100%;background:#b11416;font-size:1.3em;font-weight:bold;">
-              <i class="far fa-credit-card"></i> Card</button></a>
-
-        </div>
       </div>
-
 
     </div>
-
   </div>
-</div>
   <!--   </form>-->
   </div>
 
   <!-- FOOTER  -->
   <div class="donate-footer">
-    <div class="mt-5" style="background:#eee;">
+    <div class="mt-5">
       <div class="col-sm-12 mx-auto">
         <div class="d-flex justify-content-center align-items-center ">
           <img src="https://barnabasfund.org/sites/default/files/images/assets/fundraising-regulator-logo.png" />
           <img style="width:100px;" src="img/powered_by_stripe.png" />
         </div>
-        <p style="text-align:center;font-size:0.7em;margin:0;padding:1em 0;">Registered UK charity number: 1092935
+        <p class="footer-text">Registered UK charity number: 1092935
           Company registered in England. Number: 4029536</br> <a href="">Terms and Conditions</a> | <a href="">Privacy
             Policy</a></p>
       </div>
     </div>
   </div>
-</body>
 
+</body>
 </html>
