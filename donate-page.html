@@ -52,11 +52,11 @@
 
   <section>
     </div>
-    <div class="col-sm-12 col-md-12 col-lg-6 mx-auto">
+    <div class="col-sm-12 col-md-10 col-lg-6 mx-auto">
       <div class="donatebox">
-        <div class="col-sm-12 col-md-7 col-lg-7 mx-auto">
+        <div class="col-sm-12 col-md-8 col-lg-8 mx-auto">
           <!--  <form /action="donate-details-page.html" method="post" id="barnabas-donate-form" accept-charset="UTF-8">-->
-          <h1>Donate today</h1>
+          <h1 class="donatebox-h1">Donate today</h1>
           <div class="donation-type_wrapper">
             <ul class="btn-group btn-group-toggle no-margin" data-toggle="buttons">
               <li class="btn donation_type active">
@@ -83,7 +83,7 @@
                 <input type="radio" name="amounts" id="amount3" autocomplete="off"> £200
               </li>
               <li class="btn donation_amount" id="other" onclick="showOther();">
-                <input type="radio" name="" id="" name='thing' value="" onclick="show2();" autocomplete="off">Other
+                <input type="radio" id="other" name='thing' value="" onclick="show2();" autocomplete="off">Other
               </li>
 
             </ul>
@@ -91,7 +91,7 @@
 
 
           <div id="otheramount" class="hide">
-            <span style="font-weight:bold;font-size:15px;">Please enter an amount: £</span>
+            <span class="other-amount-text">Please enter an amount: £</span>
             <input type="text" class="other-amount" name="regular" id="regular" autocomplete="off">
           </div>
           <div class="donation-projectchoice_wrapper">
@@ -107,7 +107,7 @@
             </select>
           </div>
 
-          <div id="otherDiv" style="display:none;margin-top:1em;">
+          <div id="otherDiv">
             <label for="gifttype" style="font-weight:bold;">Please select the specific Project you would like to give
               to:</label>
             <select id="gifttype" class="my-details-input" name="gifttype">
@@ -146,16 +146,16 @@
   <!-- OTHER WAYS TO GIVE SECTION-->
 
   <section>
-    <div class="col-sm-12 col-md-10 col-lg-6 mx-auto">
+    <div class="col-sm-12 col-md-10 col-lg-7 mx-auto">
       <h2 class="donate-h2" style="text-align:center;">Other ways to give</h2>
       <div class="accordion" id="accordionExample">
         <div class="card">
-          <a style="" class="other-ways-heading" type="" data-toggle="collapse" data-target="#collapseOne"
+          <a class="other-ways-heading" type="" data-toggle="collapse" data-target="#collapseOne"
             aria-expanded="true" aria-controls="collapseOne">
             <div class="card-header d-flex align-items-center justify-content-between" id="headingOne">
               <div class="d-flex align-items-center justify-content-start">
-                <i style="width:1em;" class="fas fa-credit-card  fa-2x"></i>
-                <span style="font-weight:bold; padding-left:1em;"> Bank transfer</span>
+                <i class="fas fa-credit-card fa-2x other-ways-icon"></i>
+                <span class="other-ways-text"> Bank transfer</span>
               </div>
               <i class="fas fa-plus  fa-1x"></i>
             </div>
@@ -179,8 +179,8 @@
             aria-expanded="true" aria-controls="collapseTwo">
             <div class="card-header d-flex align-items-center justify-content-between" id="headingTwo">
               <div class="d-flex align-items-center justify-content-start">
-                <i style="width:1em;" class="fas fa-phone  fa-2x"></i>
-                <span style="font-weight:bold; padding-left:1em;"> Telephone</span>
+                <i class="fas fa-phone fa-2x other-ways-icon"></i>
+                <span class="other-ways-text"> Telephone</span>
               </div>
               <i class="fas fa-plus  fa-1x"></i>
             </div>
@@ -197,8 +197,8 @@
             aria-expanded="true" aria-controls="collapseThree">
             <div class="card-header d-flex align-items-center justify-content-between" id="headingThree">
               <div class="d-flex align-items-center justify-content-start">
-                <i style="width:1em;" class="fas fa-mobile  fa-2x"></i>
-                <span style="font-weight:bold; padding-left:1em;"> SMS</span>
+                <i class="fas fa-mobile fa-2x other-ways-icon"></i>
+                <span class="other-ways-text"> SMS</span>
               </div>
               <i class="fas fa-plus  fa-1x"></i>
             </div>
@@ -215,12 +215,12 @@
           </div>
         </div>
         <div class="card">
-          <a style="" class="other-ways-heading" type="" data-toggle="collapse" data-target="#collapseFour"
+          <a class="other-ways-heading" type="" data-toggle="collapse" data-target="#collapseFour"
             aria-expanded="true" aria-controls="collapseFour">
             <div class="card-header d-flex align-items-center justify-content-between" id="headingOne">
               <div class="d-flex align-items-center justify-content-start">
-                <i style="width:1em;" class="fas fa-envelope  fa-2x"></i>
-                <span style="font-weight:bold; padding-left:1em;">Donate by post</span>
+                <i class="fas fa-envelope  fa-2x other-ways-icon" ></i>
+                <span class="other-ways-text">Donate by post</span>
               </div>
               <i class="fas fa-plus  fa-1x"></i>
             </div>
@@ -229,8 +229,8 @@
             <div class="card-body">
               <p>Please click on the button to print our donation form, complete and post to your nearest Barnabas Fund
                 office.</p>
-              <p style="font-weight:bold;"><a target="_blank" style="font-weight:bold;" href="https://barnabasfund.org/sites/default/files/files/barnabas-aid-2017-form-gb.pdf">Postal
-                  donate form</a></p>
+              <p><strong><a target="_blank" style="color:#000;" href="https://barnabasfund.org/sites/default/files/files/barnabas-aid-2017-form-gb.pdf">Postal
+                  donate form</a></strong></p>
             </div>
           </div>
         </div>
@@ -239,7 +239,7 @@
 
 
   <div class="donate-footer">
-    <div class="mt-5" style="background:#eee;">
+    <div class="mt-5">
       <div class="col-sm-12 mx-auto">
         <div class="d-flex justify-content-center align-items-center ">
           <img style="" src="https://barnabasfund.org/sites/default/files/images/assets/fundraising-regulator-logo.png" />
