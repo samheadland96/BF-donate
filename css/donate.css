@@ -48,6 +48,28 @@ a {
   font-weight: bold;
 }
 
+
+.donate-buttons {
+  margin: 1em 0;
+}
+
+.bf-donate {
+  font-size: 18px;
+  background: #d61215;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-weight: bold;
+  border-radius: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  border: 0px;
+  color: #ffffff;
+  padding: 1em 1.5em;
+  transition: 0.2s background;
+}
+
 /* HEADER */
 
 .logo {
@@ -157,8 +179,6 @@ a {
   visibility: hidden;
 }
 
-
-
 .other-amount {
   border: 2px solid #5091cd;
   height: 50px;
@@ -218,28 +238,6 @@ select {
 
 /* Donate now button */
 
-.donate-buttons {
-  margin: 1em 0;
-}
-
-
-.bf-donate {
-  font-size: 18px;
-  background: #d61215;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 30px;
-  font-weight: bold;
-  border-radius: 0;
-  font-family: 'Roboto Condensed', sans-serif;
-  border: 0px;
-  color: #ffffff;
-  padding: 1em 1.5em;
-  transition: 0.2s background;
-}
-
 #logo {
   padding: 1em 0 0 0;
 }
@@ -281,9 +279,6 @@ color:#004990;
 cursor: pointer;
 }
 
-.single_input {
-  margin-bottom: 2%;
-}
 
 .find-address {
   font-size: 1.3em;
@@ -576,7 +571,7 @@ cursor: pointer;
   fill: #fff;
 }
 
-/* FOOTER */
+/**** FOOTER ****/
 .donate-footer {
   background: #eee;
 }
