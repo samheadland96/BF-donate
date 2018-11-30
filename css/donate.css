@@ -39,14 +39,23 @@ a {
   border-radius: 0;
 }
 
-.btn-pay-by {
-  padding: 1rem;
+.btn-pay-by-card {
   width: 100%;
-  background: #b11416;
+  background:#5091cd;
   color: #fff;
   font-size: 1.3em;
   font-weight: bold;
+  min-height: 70px;
 }
+.btn-pay-by-paypal {
+  width: 100%;
+  background:#eee;
+  color: #5091cd;
+  font-weight: bold;
+  min-height: 70px;
+
+}
+
 
 
 .donate-buttons {
